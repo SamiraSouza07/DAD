@@ -14,6 +14,8 @@ cliente2 = {
   limite: 50000,
   stts: true,
 };
+cc.push(cliente1);
+cc.push(cliente2);
 
 const nomeConta1 = document.getElementById("nome-conta1");
 nomeConta1.textContent = cliente1.nome;
