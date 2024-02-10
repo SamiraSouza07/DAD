@@ -21,9 +21,14 @@ function menu() {
       adcTarefa();
       menu();
     } else {
-      if (escolha == 3) {
-        rtrTarefa();
+      if (escolha == 2) {
+        cclTarefa();
         menu();
+      } else {
+        if (escolha == 3) {
+          rtrTarefa();
+          menu();
+        }
       }
     }
   }
@@ -41,7 +46,39 @@ function adcTarefa() {
 }
 
 //função para concluir a tarefa
-function cclTarefa() {}
+function cclTarefa() {
+  const escolha3 = window.prompt(`
+  [1] - Concluir tarefa pela descrição
+  [2] - Concluir tarefa pela posição
+        obs: inicio1
+`);
+  let indice;
+  if (escolha3 == 1) {
+    const concluir = window.prompt("Qual tarefa você deseja concluir?");
+    indice = listaTerefas.indexOf(concluir);
+  } else if (escolha3 == 2) {
+    indice = window.prompt("Qual o número da tarefa que você deseja concluir?");
+    indice--;
+  }
+
+  if (indice < 0) {
+    window.alert("Tarefa não encontrada");
+  } else {
+    lista.innerHTML = "";
+    for (let i = 0; i < listaTerefas.length; i++) {
+      console.log(i + "" + indice);
+      if (i == indice) {
+        lista.innerHTML += `<li><del>${listaTerefas[i]}</del></li>`;
+      } else {
+        lista.innerHTML += `<li>${listaTerefas[i]}</li>`;
+      }
+    }
+    const perguntar2 = window.confirm("Deseja concluir mais tarefas?");
+    if (perguntar2) {
+      cclTarefa();
+    }
+  }
+}
 
 //função para retirar tarefa
 function rtrTarefa() {
@@ -61,7 +98,7 @@ function rtrTarefa() {
     //index >=0 esta na lista
     // index = -1 não está na lista
   } else if (escolha2 == 2) {
-    indice = window.prompt("Qual o número da tarefa você deseja retirar?");
+    indice = window.prompt("Qual o número da tarefa que você deseja retirar?");
     indice--;
   }
 
