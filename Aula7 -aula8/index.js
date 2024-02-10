@@ -28,6 +28,11 @@ function menu() {
         if (escolha == 3) {
           rtrTarefa();
           menu();
+        } else {
+          if (escolha == 4) {
+            edtTarefa();
+            menu();
+          }
         }
       }
     }
@@ -120,4 +125,37 @@ function rtrTarefa() {
   }
 }
 
-function edtTarefa() {}
+//função para editar taref
+function edtTarefa() {
+  const escolha3 = window.prompt(`
+  [1] - Editar pela descrição
+  [2] - Editar pela posição
+        obs: inicio 1
+  `);
+  let indice;
+
+  if (escolha3 == 1) {
+    const editar = window.prompt("Qual tarefa você deseja editar?");
+    indice = listaTerefas.indexOf(editar);
+  } else if (escolha3 == 2) {
+    indice = window.prompt("Qual o número da tarefa que você deseja editar?");
+    indice--;
+  }
+  if (indice < 0) {
+    window.alert("Tarefa não encontrada");
+  } else {
+    let tarefa = window.prompt("Digite o nome da nova tarefa:");
+    lista.innerHTML = ``;
+    for (let i = 0; i < listaTerefas.length; i++) {
+      if (i == indice) {
+        lista.innerHTML += `<li>${tarefa}</li>`;
+      } else {
+        lista.innerHTML += `<li>${listaTerefas[i]}</li>`;
+      }
+    }
+    const perguntar = window.confirm("Deseja editar mais tarefas?");
+    if (perguntar) {
+      edtTarefa();
+    }
+  }
+}
