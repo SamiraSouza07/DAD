@@ -1,11 +1,10 @@
-//getElementsByTagName() - pergar elementos pela tag
 //referencia para a lista não ordenada
 const lista = document.getElementsByTagName("ul")[0];
 const listaTerefas = [];
 setTimeout(() => {
   menu();
 }, 500);
-//funcao meno
+//funcao menu
 function menu() {
   const escolha = window
     .prompt(
@@ -13,47 +12,40 @@ function menu() {
     [0] - Sair
     [1] - Adicionar tarefa
     [2] - Concluir tarefa
-    [3] - Retirar tarefa
-    [4] - Editar tarefa
+    [3] - Editar tarefa
+    [4] - Retirar tarefa
     `
     )
     .trim();
   if (escolha == 0) {
     return;
-  } else {
-    if (escolha == 1) {
-      adcTarefa();
-      setTimeout(() => {
-        menu();
-      }, 500);
-    } else {
-      if (escolha == 2) {
-        cclTarefa();
-        setTimeout(() => {
-          menu();
-        }, 500);
-      } else {
-        if (escolha == 3) {
-          rtrTarefa();
-          setTimeout(() => {
-            menu();
-          }, 500);
-        } else {
-          if (escolha == 4) {
-            edtTarefa();
-            setTimeout(() => {
-              menu();
-            }, 500);
-          }
-        }
-      }
-    }
+  } else if (escolha == 1) {
+    adcTarefa();
+    setTimeout(() => {
+      menu();
+    }, 500);
+  } else if (escolha == 2) {
+    cclTarefa();
+    setTimeout(() => {
+      menu();
+    }, 500);
+  } else if (escolha == 3) {
+    edtTarefa();
+    setTimeout(() => {
+      menu();
+    }, 500);
+  } else if (escolha == 4) {
+    rtrTarefa();
+    setTimeout(() => {
+      menu();
+    }, 500);
   }
 }
+
 //função adicionar tarefa
 function adcTarefa() {
   const tarefa = window.prompt(`adc-Digite a descrição da tarefa`).trim();
-  //Criando o LI
+  //Criando o li
   const li = document.createElement("li");
 
   //preenchendo o li
@@ -104,6 +96,27 @@ function cclTarefa() {
   }
 }
 
+//função para editar tarefa
+function edtTarefa() {
+  //pedindo a tarefa para o usuário
+  const tarefa = window.prompt("edt-Digite a tarefa a ser editada").trim();
+  //percorrendo a lista de nós
+  for (let i = 0; i < listaTerefas.length; i++) {
+    if (listaTerefas[i].innerText == tarefa) {
+      //pedindo a alteração
+      const alteracao = window.prompt("edt-Digite a nova tarefa");
+
+      //remoção do html
+      listaTerefas[i].innerText = alteracao;
+    }
+  }
+
+  const perguntar = window.confirm("edt-Deseja editar mais tarefas?");
+  if (perguntar) {
+    edtTarefa();
+  }
+}
+
 //função para retirar tarefa
 function rtrTarefa() {
   //pedindo a tarefa para o usuário
@@ -121,26 +134,5 @@ function rtrTarefa() {
   const perguntar = window.confirm("rtr-Deseja retirar mais tarefas?");
   if (perguntar) {
     rtrTarefa();
-  }
-}
-
-//função para editar tarefa
-function edtTarefa() {
-  //pedindo a tarefa para o usuário
-  const tarefa = window.prompt("edt-Digite a tarefa a ser editada").trim();
-  //percorrendo a lista de nós
-  for (let i = 0; i < listaTerefas.length; i++) {
-    if (listaTerefas[i].innerText == tarefa) {
-      //pedindo a alteração
-      const alteracao = window.prompt("edt-Digite a nova tarefa");
-
-      //remoção do html
-      listaTerefas[i].innerText = alteracao;
-    }
-  }
-
-  const perguntar = window.confirm("rtr-Deseja editar mais tarefas?");
-  if (perguntar) {
-    edtTarefa();
   }
 }
