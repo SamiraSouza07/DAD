@@ -3,7 +3,6 @@ const lista = document.getElementsByTagName("ul")[0];
 const listaTerefas = [];
 const listaNConcluidas = [];
 const listaConcluidas = [];
-const persistir = {};
 setTimeout(() => {
   menu();
 }, 500);
@@ -237,13 +236,9 @@ function persistirTarefas() {
 }
 //função para limpar todas as tarefas da tela
 function limparTela() {
-  console.log(listaTerefas.length);
-  for (let i = 0; i < listaTerefas.length; i++) {
-    console.log(listaTerefas[i].innerText);
+  for (let i = listaTerefas.length - 1; i >= 0; i--) {
     rtrTarefa(listaTerefas[i].innerText);
-    i--;
   }
-  console.log(listaTerefas.length);
 }
 //função para recriar a tela, a partir do ultimo save
 function recriarTela() {
