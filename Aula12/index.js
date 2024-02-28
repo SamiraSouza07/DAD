@@ -1,21 +1,21 @@
 //referencia para a lista não ordenada
 const lista = document.getElementsByTagName("ul")[0];
 const listaTerefas = [];
+const persistir = {};
 setTimeout(() => {
   menu();
 }, 500);
 function menu() {
-  const escolha = window
-    .prompt(
-      `
+  const escolha = window.prompt(
+    `
     [0] - Sair
     [1] - Adicionar tarefa
     [2] - Concluir tarefa
     [3] - Editar tarefa
     [4] - Retirar tarefa
+    [5] - Salvar
     `
-    )
-    .trim();
+  );
   if (escolha == 0) {
     return;
   } else if (escolha == 1) {
@@ -35,6 +35,11 @@ function menu() {
     }, 500);
   } else if (escolha == 4) {
     rtrTarefa();
+    setTimeout(() => {
+      menu();
+    }, 500);
+  } else if (escolha == 5) {
+    persistirTarefas();
     setTimeout(() => {
       menu();
     }, 500);
@@ -63,7 +68,7 @@ function adcTarefa() {
 
 function cclTarefa() {
   //pedindo a tarefa para o usuário
-  let tarefa = window.prompt("ccl-Digite a tarefa a ser concluida").trim();
+  const tarefa = window.prompt("ccl-Digite a tarefa a ser concluida").trim();
 
   //percorrendo a lista de nós
   for (let i = 0; i < listaTerefas.length; i++) {
@@ -130,4 +135,31 @@ function rtrTarefa() {
   if (perguntar) {
     rtrTarefa();
   }
+}
+
+//função para persistir as tarefas (salvar)
+function persistirTarefas() {
+  const concluidas = document.getElementsByTagName("del");
+  //guardando os conteudos das tags del (tarefas concluidas)
+  let concluidasConteudos = [];
+  let naoConcluidasConteudo = [];
+
+  //preenchendo a lista conteudos
+  for (let i = 0; i < concluidas.length; i++) {
+    concluidasConteudos.push(concluidas[i].innerText);
+
+    for (let j = 0; j < listaTerefas.length; j++) {
+      if (listaTerefas[j].textContent != concluidas[i].textContent) {
+        naoConcluidasConteudo.push(listaTerefas[j].textContent);
+      }
+    }
+  }
+
+  localStorage.setItem("Concluídas", JSON.stringify(concluidasConteudos));
+  localStorage.setItem("Não concluídas", JSON.stringify(naoConcluidasConteudo));
+}
+
+function recriarTela() {
+  const concluidas = JSON.parse(localStorage.getItem("Concluídas"));
+  const nConcluidas = JSON.parse(localStorage.getItem("Não concluídas"));
 }
