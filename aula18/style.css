@@ -1,11 +1,11 @@
 body {
-  color: maroon;
+  color: rgb(101, 46, 3);
   background: linear-gradient(-110grad, rgb(237, 210, 199),rgb(245, 189, 167));
 }
 .btn {
   font-family: "Times New Roman", Times, serif;
   font-size: larger;
-  background-color: rgb(119, 153, 124);
+  background-color: rgb(86, 113, 90);
   width: fit-content;
   padding: 0.4rem 0.6rem;
   color: rgb(255, 235, 210);
@@ -15,8 +15,9 @@ body {
   margin: 0.2rem;
 }
 .img {
-  width: 10%;
+  width: 20%;
   border-radius: 5px;
+  margin: 0.4rem;
 }
 input{
   font-family: 'Times New Roman', Times, serif;
