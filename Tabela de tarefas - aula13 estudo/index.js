@@ -1,5 +1,8 @@
+//mapeando as linhas da tabela
 const tr = document.getElementsByTagName("tr");
+//variável para guardar a data do ultimo save
 let ultimoSave;
+//matrizes para armazenar a quantidade e as descrições das tarefas por cada dia/hora
 const qntTarefas = [
   [0, 0, 0, 0, 0],
   [0, 0, 0, 0, 0],
@@ -22,6 +25,7 @@ const tdsTarefas = [
 setTimeout(() => {
   menu();
 }, 500);
+//função para apresentar o menu
 function menu() {
   const escolha = window.prompt(`
   --------------------OPÇÕES--------------------
@@ -32,15 +36,20 @@ function menu() {
                     [8]-Limpar tela 
     
     `);
+  //sair
   if (escolha == 0) {
     return;
-  } else if (escolha == 1) {
+  } //inserir tarefas
+  else if (escolha == 1) {
     let continuar = true;
+    //laço de repetição para inputar dados
     do {
       let diaSemana;
       let horario;
+      //inputando a descrição da tarefa
       const nomeTarefa = window.prompt("Digite o nome da tarefa");
       let diaValido = false;
+      //laço de repetição para inputar o dia da semana
       while (!diaValido) {
         diaSemana =
           window.prompt(`Em qual dia da semana você deseja adicionar esta tarefa?
@@ -49,6 +58,7 @@ function menu() {
           [3]-Quarta
           [4]-Quinta
           [5]-Sexta`);
+        //verificar se a opção é válida
         if (diaSemana > 5 || diaSemana < 1) {
           window.alert("Digite apenas opções do menu");
         } else {
@@ -56,6 +66,7 @@ function menu() {
         }
       }
       let horarioValido = false;
+      //laço de repetição para inputar o horário
       while (!horarioValido) {
         horario = window.prompt(`Em qual horário você deseja adicionar a tarefa?
           [1]-14:30
@@ -66,13 +77,16 @@ function menu() {
           [6]-17:00
           [7]-17:30
           [8]-18:00`);
+        //verificar se a opção é válida
         if (horario > 8 || horario < 1) {
           window.alert("Digite apenas opções do menu");
         } else {
           horarioValido = true;
         }
       }
+      //chamando função para inserir a tarefa
       inserirTarefa(nomeTarefa, diaSemana, horario);
+      //perguntar se o usuário quer inserir mais tarefas
       continuar = window.confirm("Deseja inserir mais tarefas?");
     } while (continuar);
     setTimeout(() => {
@@ -377,6 +391,7 @@ function trocarTarefas(
       if (ul1.children[i].textContent == tarefa1) {
         li1 = ul1.children[i];
         achou1 = true;
+        tdsTarefas[horario1 - 1][diaSemana1 - 1][i] = tarefa2;
       }
     }
     let achou2 = false;
@@ -385,6 +400,7 @@ function trocarTarefas(
       if (ul2.children[i].textContent == tarefa2) {
         li2 = ul2.children[i];
         achou2 = true;
+        tdsTarefas[horario2 - 1][diaSemana2 - 1][i] = tarefa1;
       }
     }
     if (!achou1) {
@@ -412,7 +428,6 @@ function pegarDataAtual() {
   return dataFormatada;
 }
 function persistirTarefas() {
-  localStorage.clear()
   let salvar = window.confirm(
     "Deseja realmente salvar os dados? Ultimo save: " + ultimoSave
   );
@@ -425,7 +440,7 @@ function persistirTarefas() {
   }
 }
 function recriarTela() {
-  limparTela()
+  limparTela();
   const carregar = window.confirm(
     "Deseja carregar os dados do Save: " + ultimoSave + "?"
   );
@@ -449,7 +464,6 @@ function limparTela() {
     for (let j = 0; j < tdsTarefas[i].length; j++) {
       for (let z = 0; z < tdsTarefas[i][j].length; z++) {
         removerTarefa(tdsTarefas[i][j][z], j + 1, i + 1);
-        console.log(tdsTarefas[i][j][z], j + 1, i + 1);
         z--;
       }
     }
