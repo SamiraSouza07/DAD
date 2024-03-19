@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+    <title>aula 19</title>
+  </head>
+  <body>
+    <h1>Eventos - Clique (onclick)</h1>
+    <hr />
+    <h2>Inserir imagens</h2>
+    <p onclick="clicar()" class="btn">Criar imagem</p>
+    <p onclick="reset()" class="btn">Apagar ultima imagem</p>
+    <div id="bloco-imagens">
+      <h1 id="titulo-div-img">Galeria</h1>
+    </div>
+    <hr />
+    <br />
+    <hr />
+    <h2>Lista de Tarefas</h2>
+    <div id="bloco-tarefas"><h1 id="titulo-div-tarefas">Tarefas</h1></div>
+    <label for="tarefaLabel">Digite uma tarefa</label>
+    <input id="tarefa" type="text" placeholder="Nova Tarefa" />
+    <p class="btn" onclick="criarTarefa()">Criar Tarefa</p>
+    <p class="btn" onclick="salvar()">💾</p>
+  </body>
+</html>
