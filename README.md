@@ -14,6 +14,7 @@ Um repositorio remoto para a matéria de Desenvolvimento aplicada a dinâmica
 
 ## Instalação
 
-Você pode baixar a imagem tomcat que contem o programa Tabela de tarefas
+Você pode baixar as imagens tomcat que contenham os meus programas:
 
-- samirasouza/img_tabela_tarefas:1.0
+- [Tabela de tarefas](https://hub.docker.com/repository/docker/samirasouza/img_tabela_tarefas/general)
+- [Cine Tech (Pratica 2f)](https://hub.docker.com/repository/docker/samirasouza/cine_tech/general)

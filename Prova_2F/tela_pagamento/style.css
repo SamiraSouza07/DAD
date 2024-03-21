@@ -10,14 +10,19 @@ body {
 #bloco-total-valor {
   display: inline-block;
 }
-#coluna1,
 #bloco-total-label {
+  margin-left: 20px;
+  margin-right: 30px;
+}
+#coluna1 {
   margin-right: 35px;
 }
 h2 {
   margin-bottom: 3px;
 }
-#bloco-total-valor,
+#bloco-total-valor {
+  margin-left: 55px;
+}
 #coluna2 {
   margin-left: 35px;
 }
@@ -31,5 +36,43 @@ h2 {
 }
 #maior {
   text-align: center;
-  background-color: aquamarine;
+}
+#linha {
+  height: 1px;
+  width: 270px;
+  background-color: black;
+  border-radius: 2px;
+}
+.btn {
+  width: 15%;
+  padding: 2px 3px;
+  margin-bottom: 5px;
+  color: rgb(84, 67, 45);
+  font-weight: bold;
+  font-size: larger;
+  border-radius: 5px;
+  border: 2px solid rgb(84, 67, 45);
+  background-color: antiquewhite;
+  cursor: pointer;
+}
+.btn-final {
+  width: 30%;
+  padding: 5px 7px;
+  font-weight: bold;
+  font-size: larger;
+  border-radius: 5px;
+  background-color: rgb(92, 161, 91);
+  cursor: pointer;
+  border: 2px solid rgb(58, 103, 57);
+  color: antiquewhite
+}
+.selecionado {
+  background-color: rgb(92, 161, 91);
+  color: rgb(250, 243, 232);
+}
+#bloco-botoes {
+  margin-top: 20px;
+}
+#btn-final{
+  margin-top: 25px;
 }

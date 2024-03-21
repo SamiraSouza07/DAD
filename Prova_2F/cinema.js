@@ -134,7 +134,6 @@ function calculaTotal() {
 }
 function geraArrayAssentos() {
   const qnt = document.getElementsByClassName("selecionado").length;
-  console.log(qnt);
   if (qnt > 0) {
     const array = document.getElementsByClassName("selecionado");
     const array2 = [];
