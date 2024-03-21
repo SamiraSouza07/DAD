@@ -1,0 +1,99 @@
+body {
+  background-color: bisque;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+h2 {
+  text-align: center;
+}
+#cinema {
+  width: 90%;
+  text-align: center;
+}
+#bloco-tabela2-qnt{
+  text-align:center;
+  vertical-align: middle;
+}
+#table2 {
+  width: 40%;
+}
+#table3{
+  margin-top: 15px;
+  width: 100%;
+}
+#bloco-btn-qnt {
+  width: fit-content;
+  text-align: center;
+  display: inline-block;
+}
+#bloco-lista-maior{
+  text-align: center;
+  margin: 5px;
+}
+#bloco-lista{
+  display: inline-block;
+}
+#bloco-tabela2{
+  display: inline-block;
+}
+td {
+  font-size: 20px;
+}
+th {
+  font-size: larger;
+}
+
+.btn {
+  padding: 10px;
+  margin: 20px;
+  background-color: rgb(92, 161, 91);
+  color: rgb(250, 243, 232);
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  border: 1.5px solid rgb(84, 67, 45);
+  width: fit-content
+
+}
+.btn-menor {
+  width: 20%;
+  padding: 2px 3px;
+  margin-bottom: 5px;
+  color: rgb(84, 67, 45);
+  font-weight: bold;
+  font-size: larger;
+  border-radius: 5px;
+  border: 2px solid rgb(84, 67, 45);
+  background-color: antiquewhite;
+  cursor: pointer;
+}
+.assento {
+  font-size: large;
+  user-select: none;
+  border-radius: 5px;
+  border: solid bisque;
+}
+.sem-assento {
+  background-color: rgb(223, 210, 191);
+}
+.ocupado {
+  color: rgb(255, 238, 238);
+  background-color: brown;
+}
+.nao-ocupado {
+  background-color: rgb(111, 190, 110);
+  cursor: pointer;
+}
+.selecionado {
+  background-color: rgb(136, 136, 218);
+}
+.img {
+  width: 35px;
+  margin: 3px;
+}
+#bloco-botao {
+  text-align: center;
+}

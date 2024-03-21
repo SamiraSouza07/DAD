@@ -36,25 +36,27 @@ label {
   border-radius: 0.5rem;
 }
 .tarefas-style {
-  color: rgb(101, 46, 3);
+  color: antiquewhite;
   margin-bottom: 0.4rem;
   margin-top: 0.4rem;
   user-select: none;
   cursor: pointer;
-  padding-left:3px;
+  padding-left: 3px;
   padding-right: 3px;
 }
 .concluida {
   text-decoration: line-through;
 }
-#bloco-imagens, #bloco-tarefas {
+#bloco-imagens,
+#bloco-tarefas {
   background-color: rgb(79, 122, 111);
   width: fit-content;
   border-radius: 0.5rem;
   padding: 0.2rem 0.3rem;
   margin-top: 0.5rem;
 }
-#titulo-div-img, #titulo-div-tarefas  {
+#titulo-div-img,
+#titulo-div-tarefas {
   color: antiquewhite;
   font-size: 1.5em;
   text-align: center;
@@ -62,10 +64,8 @@ label {
 .x-invisivel {
   width: 15px;
   margin-left: 10px;
-  display:none
+  display: none;
 }
-.x-aparecer{
- display:inline-block
+.x-aparecer {
+  display: inline-block;
 }
-
-

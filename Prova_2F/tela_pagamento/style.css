@@ -1,0 +1,35 @@
+body {
+  background-color: bisque;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  text-align: center;
+}
+#coluna1,
+#coluna2,
+#bloco-total-label,
+#bloco-total-valor {
+  display: inline-block;
+}
+#coluna1,
+#bloco-total-label {
+  margin-right: 35px;
+}
+h2 {
+  margin-bottom: 3px;
+}
+#bloco-total-valor,
+#coluna2 {
+  margin-left: 35px;
+}
+#bloco-principal {
+  background-color: rgb(242, 202, 153);
+  padding: 10px 20px;
+  border-radius: 20px;
+  width: fit-content;
+  display: inline-block;
+  border: solid 2px rgb(76, 11, 11);
+}
+#maior {
+  text-align: center;
+  background-color: aquamarine;
+}

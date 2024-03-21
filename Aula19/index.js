@@ -23,10 +23,10 @@ function criarTarefa() {
     if (qntTarefas == 0) {
       const ul = document.createElement("ul");
       ul.setAttribute("id", "lista-tarefas");
-      div.appendChild(ul)
+      div.appendChild(ul);
     }
-    const divLi = document.createElement('div')
-    divLi.classList.add("divLi")
+    const divLi = document.createElement("div");
+    divLi.classList.add("divLi");
     const ul = document.getElementById("lista-tarefas");
     const li = document.createElement("li");
     li.textContent = conteudoTarefa;
@@ -41,12 +41,12 @@ function criarTarefa() {
     const img = document.createElement("img");
     img.setAttribute("src", "assets/X.png");
     img.classList.add("x-invisivel");
-    divLi.addEventListener("mouseenter", ()=>{
-        aparecerX(img)
-    })
-    divLi.addEventListener("mouseleave", ()=>{
-      desaparecerX(img)
-  })
+    divLi.addEventListener("mouseenter", () => {
+      aparecerX(img);
+    });
+    divLi.addEventListener("mouseleave", () => {
+      desaparecerX(img);
+    });
     img.addEventListener("click", () => {
       excluirTarefa(li);
     });
@@ -55,7 +55,7 @@ function criarTarefa() {
     li.appendChild(img);
 
     //adicionando o li ao ul
-    divLi.appendChild(li)
+    divLi.appendChild(li);
     ul.appendChild(divLi);
     qntTarefas += 1;
   }
@@ -74,9 +74,9 @@ function excluirTarefa(li) {
     qntTarefas -= 1;
   }
 }
-function aparecerX(img){
-  img.classList.add("x-aparecer")
+function aparecerX(img) {
+  img.classList.add("x-aparecer");
 }
-function desaparecerX(img){
-  img.classList.remove("x-aparecer")
+function desaparecerX(img) {
+  img.classList.remove("x-aparecer");
 }
