@@ -1,20 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/Icone_calendario.png" type="image/x-icon">
     <script src="index.js" defer></script>
-    <title>Prática para prova - Aula13</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Calendário de tarefas</title>
   </head>
   <body>
-    <hr />
-    <hr />
-    <h1 align="center">📅 Calendário - Tarefas 📅</h1>
-    <hr />
-    <hr />
-    <br />
-    <br />
-    <table border="1" width="100%">
+    <h1><img src="assets/Icone_calendario.png"> Calendário - Tarefas <img src="assets/Icone_calendario.png" ></h1>
+    <table width="100%">
       <tr>
         <th>Horários</th>
         <th>Segunda</th>
@@ -88,5 +84,29 @@
         <td></td>
       </tr>
     </table>
+    <div id="bloco-input">
+      <label for="inserir">Inserir tarefa</label>
+      <input type="text" name="inserir" id='inserir' placeholder="Nome da tarefa" />
+      <label for="dia-semana">Dia da semana</label>
+      <select name="dia-semana" id="dia-semana">
+        <option value="1">Segunda</option>
+        <option value="2">Terça</option>
+        <option value="3">Quarta</option>
+        <option value="4">Quinta</option>
+        <option value="5">Sexta</option>
+      </select>
+      <label for="horario">Horário</label>
+      <select name="horario" id="horario">
+        <option value="1">14:30</option>
+        <option value="2">15:00</option>
+        <option value="3">15:30</option>
+        <option value="4">16:00</option>
+        <option value="5">16:30</option>
+        <option value="6">17:00</option>
+        <option value="7">17:30</option>
+        <option value="8">18:00</option>
+      </select>
+    </div>
+    <div id="bloco-botao"><button class="btn" id="btn-inserir">Inserir tarefa</button></div>
   </body>
 </html>
