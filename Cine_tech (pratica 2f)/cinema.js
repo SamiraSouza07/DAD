@@ -35,15 +35,41 @@ const maisRefri = document.getElementById("+refri");
 menosPipoca.addEventListener("click", () => {
   menosPipocas();
 });
+menosPipoca.addEventListener("mouseenter", () => {
+  menosPipoca.classList.add("btn-selecionado");
+});
+menosPipoca.addEventListener("mouseleave", () => {
+  menosPipoca.classList.remove("btn-selecionado");
+});
+
 maisPipoca.addEventListener("click", () => {
   maisPipocas();
 });
+maisPipoca.addEventListener("mouseenter", () => {
+  maisPipoca.classList.add("btn-selecionado");
+});
+maisPipoca.addEventListener("mouseleave", () => {
+  maisPipoca.classList.remove("btn-selecionado");
+});
+
 menosRefri.addEventListener("click", () => {
   menosRefris();
+});
+menosRefri.addEventListener("mouseenter", () => {
+  menosRefri.classList.add("btn-selecionado");
+});
+menosRefri.addEventListener("mouseleave", () => {
+  menosRefri.classList.remove("btn-selecionado");
 });
 
 maisRefri.addEventListener("click", () => {
   maisRefris();
+});
+maisRefri.addEventListener("mouseenter", () => {
+  maisRefri.classList.add("btn-selecionado");
+});
+maisRefri.addEventListener("mouseleave", () => {
+  maisRefri.classList.remove("btn-selecionado");
 });
 
 function menosPipocas() {
@@ -147,19 +173,39 @@ function geraArrayAssentos() {
   }
 }
 
-const finaliza = document.getElementById("finalizar")
-finaliza.addEventListener("click",()=>{
-  salvarDados()
+const finaliza = document.getElementById("finalizar");
+finaliza.addEventListener("click", () => {
+  const valor = document.getElementById("valor-total").textContent;
+  const confirmar = window.confirm(
+    "Deseja finalizar a compra? Total: " + valor
+  );
+  if (confirmar) {
+    salvarDados();
+    window.location.href = "tela_pagamento/index.html";
+  }
+});
+finaliza.addEventListener("mouseenter",()=>{
+  finaliza.classList.add("btn-selecionado-finalizar")
+})
+finaliza.addEventListener("mouseleave",()=>{
+  finaliza.classList.remove("btn-selecionado-finalizar")
 })
 
-function salvarDados(){
-  localStorage.clear()
+function salvarDados() {
+  localStorage.clear();
   let pipoca = document.getElementById("n-pipocas").textContent;
   let refri = document.getElementById("n-refris").textContent;
   let ingresso = document.getElementById("n-ingressos").textContent;
   let valorpipoca = pipoca * 15;
   let valorrefri = refri * 12;
   let valoringresso = ingresso * 35;
-  const dados = [pipoca, valorpipoca, refri, valorrefri, ingresso, valoringresso]
-  localStorage.setItem("QntValores", JSON.stringify(dados))
+  const dados = [
+    pipoca,
+    valorpipoca,
+    refri,
+    valorrefri,
+    ingresso,
+    valoringresso,
+  ];
+  localStorage.setItem("QntValores", JSON.stringify(dados));
 }

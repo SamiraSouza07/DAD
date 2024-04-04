@@ -56,6 +56,11 @@ h2 {
   background-color: antiquewhite;
   cursor: pointer;
 }
+.btn-em-cima {
+  border: 2px solid rgb(67, 53, 35);
+  background-color: rgb(225, 210, 191);
+  color: rgb(67, 53, 35);
+}
 .btn-final {
   width: 20%;
   padding: 5px 7px;
@@ -65,15 +70,27 @@ h2 {
   background-color: rgb(92, 161, 91);
   cursor: pointer;
   border: 2px solid rgb(58, 103, 57);
-  color: antiquewhite
+  color: antiquewhite;
 }
 .selecionado {
   background-color: rgb(92, 161, 91);
   color: rgb(250, 243, 232);
 }
+.selecionado-em-cima {
+  background-color: rgb(64, 116, 64);
+  color: rgb(230, 223, 211);
+}
+.btn-final-em-cima {
+  background-color: rgb(70, 126, 69);
+  border: 2px solid rgb(51, 91, 50);
+}
 #bloco-botoes {
   margin-top: 20px;
 }
-#btn-final{
+#btn-final {
   margin-top: 25px;
+}
+img {
+  width: 15%;
+  margin-top: 10px;
 }
