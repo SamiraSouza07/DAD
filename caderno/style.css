@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: Cambria;
+  background-color: rgb(250, 241, 229);
+}
+header {
+  color: antiquewhite;
+  text-align: center;
+  background-color: rgb(18, 151, 151);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+#home {
+  width: 30px;
+  padding-top: 5px;
+}
+h1 {
+  display: inline-block;
+  padding-bottom: 5px;
+}
