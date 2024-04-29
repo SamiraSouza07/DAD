@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  caca_letras:
+    build:
+      context: .
+      dockerfile: dockerfile
+    image: samirasouza/caca_letras:1.0
+    ports:
+      - 12340:80
+    volumes:
+      - ./jogo:/usr/share/nginx/html
