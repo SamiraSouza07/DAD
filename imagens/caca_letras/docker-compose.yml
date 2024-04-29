@@ -8,4 +8,4 @@ services:
     ports:
       - 12340:80
     volumes:
-      - ./jogo:/usr/share/nginx/html
+      - ../projetos/caça letras/1-tela-inicial:/usr/share/nginx/html
