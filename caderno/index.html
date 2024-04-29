@@ -1,17 +1,221 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <script src="index.js" defer></script>
+    <link rel="shortcut icon" href="assets/caderno.png" type="image/x-icon" />
     <title>Caderno - DAD</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <img id="home" src="assets/home.png" alt="">
-        <h1>Caderno</h1>
+      <a href="./index.html">
+        <img id="home" class="icon" src="assets/home.svg" alt=""
+      /></a>
+      <input type="text" id="pesquisa-tema" placeholder="Pesquisar temas" />
+      <a href="https://github.com/SamiraSouza07/DAD" target="_blank">
+        <img id="git" class="icon" src="assets/git.svg" alt=""
+      /></a>
+      <h1>Caderno</h1>
     </header>
-    
-</body>
+    <main>
+      <ul id="lista-temas">
+        <li id="tema1" class="temas">
+          <h3>Variáveis tipo</h3>
+          <div class="exp exp-invisivel">
+            <h3>Const</h3>
+            <p>Constante, variavel que eu não vou mexer.</p>
+            <code>
+              <p class="destacar">const</p>
+              index = 3,14</code
+            >
+
+            <h3>Let</h3>
+            <p>
+              Tipo de variavel que vc ira mexer constantemente, varias vezes.
+            </p>
+            <code
+              ><p class="destacar">let</p>
+              altura = 1,60</code
+            >
+          </div>
+        </li>
+        <li id="tema2" class="temas">
+          <h3>Propriedade de texto</h3>
+          <div class="exp exp-invisivel">
+            <h3>innerHTML</h3>
+            <p>
+              Pega um texto de um elemento e reconhece o html que esta no
+              elemento.
+            </p>
+            <code>
+              li = "&lt;li&gt;Olá!&lt;/li&gt;" <br />
+              const tarefa = li.
+              <p class="destacar">innerHtml</p>
+              <br />
+              console.log("Tarefa é igual a:",tarefa) <br />
+              <p class="saida-console">
+                Tarefa é igual a: &lt;li&gt;Olá!&lt;/li&gt;
+              </p>
+            </code>
+
+            <h3>textContent</h3>
+            <p>
+              Propriedade de nós, pega o texto de um elemento e o interpreta
+              apenas como texto.
+            </p>
+            <code>
+              li = "&lt;li&gt;Olá!&lt;/li&gt;" <br />
+              const tarefa = li.
+              <p class="destacar">textContent</p>
+              <br />
+              console.log("Tarefa é igual a:",tarefa) <br />
+              <p class="saida-console">Tarefa é igual a: Olá!</p>
+            </code>
+
+            <h3>innerText</h3>
+            <p>
+              Propriedade do html, pega o texto de um elemento e o interpreta
+              apenas como texto.
+            </p>
+            <code>
+              li = "&lt;li&gt;Olá!&lt;/li&gt;" <br />
+              const tarefa = li.
+              <p class="destacar">innerText</p>
+              <br />
+              console.log("Tarefa é igual a:",tarefa) <br />
+              <p class="saida-console">Tarefa é igual a: Olá!</p>
+            </code>
+          </div>
+        </li>
+        <li id="tema3" class="temas">
+          <h3>Métodos de conteúdo</h3>
+          <div class="exp exp-invisivel">
+            <h3>getElementById</h3>
+            <p>Pega um elemento html a partir de seu id.</p>
+            <code>
+              &lt;p
+              <p class="destacar">id="texto"</p>
+              &gt;Samira de Souza&lt;/p&gt; <br />
+              const elemento = document.
+              <p class="destacar">getElementById</p>
+              ("texto") <br />
+              console.log(elemento) <br />
+              <p class="saida-console">
+                &lt;p&gt;Samira de Souza&lt;/p&gt; <br />
+              </p>
+            </code>
+
+            <h3>getElementsByClassName</h3>
+            <p>Pega uma lista de elementos com base no nome de uma classe.</p>
+            <code>
+              &lt;p
+              <p class="destacar">class="textos"</p>
+              &gt;Samira de Souza&lt;/p&gt; <br />
+              &lt;p
+              <p class="destacar">class="textos"</p>
+              &gt;Vicente de Souza&lt;/p&gt; <br />
+              const elementos = document.
+              <p class="destacar">getElementsByClassName</p>
+              ("textos") <br />
+              console.log(elementos[0]) <br />
+              <p class="saida-console">
+                &lt;p&gt;Samira de Souza&lt;/p&gt; <br />
+              </p>
+              console.log(elementos[1]) <br />
+              <p class="saida-console">
+                &lt;p&gt;Vicente de Souza&lt;/p&gt; <br />
+              </p>
+            </code>
+          </div>
+        </li>
+        <li id="tema5" class="temas">
+          <h3>Click</h3>
+          <div class="exp exp-invisivel">
+            <h3>Click por função</h3>
+            <p>Quando o evento é atribuido direto no elemento.</p>
+            <code>&lt;p onclick="clique"&gt;Olá&lt;/p&gt</code>
+            <h3>Click pelo escutador</h3>
+            <p>
+              Quando usamos o addEventListener no js para escutar o evento click
+              e muitos outros.
+            </p>
+            <code> elemento.addEventListener("click", () => {}) </code>
+          </div>
+        </li>
+        <li id="tema6" class="temas">
+          <h3>Mouseenter/Mouseleave</h3>
+          <div class="exp exp-invisivel">
+            <h3>Mouseenter</h3>
+            <p>
+              Evento que acontesse quando o mouse se move sobre um elemento.
+            </p>
+            <code>
+              const quadradosEnter =
+              document.getElementsByClassName("quadrado")[0]; <br />
+              quadradosEnter.addEventListener("mouseenter", () => { <br />
+              cor aleatoria const r = Math.floor(Math.random() * 256); <br />
+              const g = Math.floor(Math.random() * 256); <br />
+              const b = Math.floor(Math.random() * 256); <br />
+              quadradosEnter.style.backgroundColor = `rgb(${r},${g},${b})`;
+              <br />
+              });
+              <div class="quadrado"></div>
+            </code>
+            <h3>Mouseleave</h3>
+            <p>
+              Evento que acontesse quando o mouse se move para fora de um
+              elemento.
+            </p>
+            <code
+              >const quadradosOut =
+              document.getElementsByClassName("quadrado")[1]; <br />
+              quadradosOut.addEventListener("mouseleave", () => { <br />
+              const r = Math.floor(Math.random() * 256); <br />
+              const g = Math.floor(Math.random() * 256); <br />
+              const b = Math.floor(Math.random() * 256); <br />
+              quadradosOut.style.backgroundColor = `rgb(${r},${g},${b})`; <br />
+              });
+              <div class="quadrado"></div>
+            </code>
+          </div>
+        </li>
+        <li id="tema7" class="temas">
+          <h3>Keydown/Keyup</h3>
+          <div class="exp exp-invisivel">
+            <h3>Keydown</h3>
+            <p>Evento que acontesse quando uma tecla é abaixada, não considerandoo que foi escrito no momento do disparo.</p>
+            <code> </code>
+            <input type="text" id="down" placeholder="Digite algo">
+            <div id="msg"></div>
+            <h3>Keyup</h3>
+            <p>
+              Evento que acontesse quando a tecla é solta considerando a tecla
+              escrita.
+            </p>
+            <code> </code>
+            <input type="text" id="up" placeholder="Pesquisar fruta" />
+            <div class="fruta inline-block">Abacate</div>
+            <div class="fruta inline-block">Abacaxi</div>
+            <div class="fruta inline-block">Banana</div>
+            <div class="fruta inline-block">Bergamota</div>
+            <div class="fruta inline-block">Caqui</div>
+            <div class="fruta inline-block">Carambola</div>
+            <div class="fruta inline-block">Damasco</div>
+            <div class="fruta inline-block">Framboesa</div>
+            <div class="fruta inline-block">Jaca</div>
+            <div class="fruta inline-block">Jabuticaba</div>
+            <div class="fruta inline-block">Kiwi</div>
+            <div class="fruta inline-block">Limão</div>
+            <div class="fruta inline-block">Lima</div>
+            <div class="fruta inline-block">Maça</div>
+            <div class="fruta inline-block">Moranga</div>
+            <div class="fruta inline-block">Morango</div>
+            <div class="fruta inline-block">Seriguela</div>
+          </div>
+        </li>
+      </ul>
+    </main>
+  </body>
 </html>

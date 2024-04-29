@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 4px 2px -2px gray;
+  height: 100px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 2;
+}
+
+#logo {
+  width: 90px;
+}
+
+nav {
+  width: 90%;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+  transform: scale(1.1);
+  cursor: pointer;
+  color: #f36527;
+}
+
+/* atuando como modal box */
+aside {
+  position: fixed;
+  display: none;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 2rem 0;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 3;
+}
+
+form {
+  accent-color: #f36527;
+  display: flex;
+  padding: 4rem 3rem;
+  gap: 2.5rem;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #f36527;
+}
+
+.secao-favoritos {
+  accent-color: #f36527;
+  display: flex;
+  padding: 5rem 3rem;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #f36527;
+  min-height: 70vh;
+  width: 50vw;
+}
+
+.container-favoritos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+[type="checkbox"] {
+  margin-right: 1rem;
+}
+
+.container-tipos {
+  display: flex;
+  gap: 5rem;
+}
+
+.container-range {
+  display: flex;
+  gap: 1rem;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+main {
+  padding: 5rem 5rem 5rem 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.container-btns {
+  display: flex;
+  gap: 5rem;
+}
+
+.icone {
+  width: 25px;
+}
+
+.btn-filtros {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-sizing: border-box;
+  background-color: #f36527;
+  padding: 0.75rem 1.5rem;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px black;
+}
+
+.btn-favoritos {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-sizing: border-box;
+  background-color: white;
+  padding: 0.75rem 1.5rem;
+  color: #f36527;
+  font-weight: bold;
+  border: 1px solid #f36527;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px black;
+}
+
+.btn-favoritos:hover {
+  transition: 300ms ease;
+  background-color: #f3efed;
+}
+
+.btn-aplicar {
+  box-sizing: border-box;
+  background-color: #f36527;
+  padding: 1rem 2rem;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-filtros:hover,
+.btn-aplicar:hover {
+  background-color: #d15a27;
+  color: white;
+  text-decoration: none;
+  transition: 300ms ease;
+}
+
+.secao-imoveis {
+  display: flex;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+
+.imovel {
+  box-shadow: 0px 0px 5px black;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.imovel:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 0px 5px 2px #f36527;
+}
+
+.conteudo-imovel {
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.tipo {
+  font-size: 1.4rem;
+  font-weight: 200;
+}
+
+.icone-card {
+  width: 15px;
+}
+
+.endereco-imovel {
+  font-size: 1.4rem;
+}
+
+.cidade-imovel {
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+.metragem,
+.dormitorios,
+.vagas,
+.metragem-valor,
+.dormitorios-valor,
+.vagas-valor {
+  font-size: inherit;
+}
+
+.metragem,
+.dormitorios,
+.vagas {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.descricao-aluguel {
+  display: flex;
+  justify-content: space-between;
+}
+
+.aluguel {
+  font-size: 1.5rem;
+}
+
+.aluguel-valor {
+  font-size: inherit;
+}
+
+.total {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #f36527;
+}
+
+.total-valor {
+  font-size: inherit;
+}
+
+.imovel-espec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
+}
+
+.icone-fav {
+  width: 30px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #f36527;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 2px 2px gray;
+  height: 200px;
+  gap: 5rem;
+}
+
+footer > h4 {
+  font-style: italic;
+  font-size: 2rem;
+  font-weight: 400;
+  color: white;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Germihome</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <script src="script.js" defer></script>
+    <script src="resposta.js" defer></script>
+    <script src="bonus.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <img id="logo" src="assets/imagens/Germihome-logo.png" alt="" />
+      <nav>
+        <ul>
+          <li><a href="#">Imóveis</a></li>
+          <li><a href="#">Documentos</a></li>
+          <li><a href="#">Contato</a></li>
+          <li><a href="#">Cadastro</a></li>
+        </ul>
+      </nav>
+    </header>
+    <aside class="modal-filtros">
+      <form id="filtros" action="#">
+        <h2>Filtros</h2>
+        <h3>Tipos:</h3>
+        <div class="container-tipos">
+          <label for="tipo"
+            ><input id="tipo-casa" type="checkbox" name="tipo" />Casa</label
+          >
+          <label for="tipo"
+            ><input
+              id="tipo-apartamento"
+              type="checkbox"
+              name="tipo"
+            />Apartamento</label
+          >
+          <label for="tipo"
+            ><input id="tipo-kitnet" type="checkbox" name="tipo" />Kitnet</label
+          >
+        </div>
+        <h3>Vagas (máxima):</h3>
+        <div class="container-range">
+          <input
+            value="0"
+            min="0"
+            max="5"
+            type="range"
+            name="vagas"
+            id="vagas"
+          />
+          <label id="numVagas" for="vagas">0</label>
+        </div>
+        <h3>Metragem (máxima):</h3>
+        <div class="container-range">
+          <input
+            value="5"
+            min="5"
+            max="104"
+            type="range"
+            name="metragem"
+            id="metragem"
+          />
+          <label id="numMetragem" for="metragem">0</label>
+        </div>
+        <h3>Dormitórios (máximo):</h3>
+        <div class="container-range">
+          <input
+            value="1"
+            min="1"
+            max="5"
+            type="range"
+            name="dormitorios"
+            id="dormitorios"
+          />
+          <label id="numDormitorios" for="dormitorios">0</label>
+        </div>
+        <h3>Aluguel (máximo):</h3>
+        <div class="container-range">
+          <input
+            value="0"
+            min="0"
+            max="6500"
+            step="100"
+            type="range"
+            name="aluguel"
+            id="aluguel"
+          />
+          <label id="valorAluguel" for="aluguel">0</label>
+        </div>
+        <h3>Total (máximo):</h3>
+        <div class="container-range">
+          <input
+            value="0"
+            min="0"
+            max="7000"
+            step="100"
+            type="range"
+            name="total"
+            id="total"
+          />
+          <label id="valorTotal" for="total">0</label>
+        </div>
+        <button class="btn-aplicar">Aplicar Filtro</button>
+      </form>
+    </aside>
+    <aside class="modal-favoritos">
+      <section class="secao-favoritos">
+        <h2>Favoritos</h2>
+        <div class="container-favoritos"></div>
+      </section>
+    </aside>
+    <main>
+      <div class="container-btns">
+        <button class="btn-filtros" href="#">
+          <img class="icone" src="assets/icones/filtro.svg" alt="" srcset="" />
+          Filtros
+        </button>
+        <button class="btn-favoritos" href="#">
+          <img
+            class="icone"
+            src="assets/icones/favorito-solid.svg"
+            alt=""
+            srcset=""
+            id="btnfav-icon"
+          />
+          Favoritos
+        </button>
+      </div>
+      <section class="secao-imoveis"></section>
+    </main>
+    <footer>
+      <h4>"Germinando lares"</h4>
+    </footer>
+  </body>
+</html>

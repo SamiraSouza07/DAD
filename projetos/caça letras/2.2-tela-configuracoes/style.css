@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(231, 245, 203);
+    font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 10px 20px;
+    text-align: center;
+}
+h1{
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: rgb(50, 66, 50);
+}
+p{
+    font-size: 18px;
+    color: rgb(38, 50, 38);
+}
+.button{
+    margin: auto;
+    cursor: pointer;
+    display: block;
+    margin-top: 10px;
+    width: 10%;
+    text-align: center;
+    padding: 10px 5px;
+    border-radius: 5px;
+    border: solid 1.5px rgb(70, 110, 70) ;
+    background-color: rgb(115, 158, 115);
+    color: aliceblue;
+    font-weight: bold;
+    font-family:  Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.button:hover{
+    border: solid 1.5px rgb(47, 73, 47) ;
+    background-color: rgb(85, 123, 85);
+    color: rgb(216, 223, 230);
+}
+img{
+    width: 20%;
+    display: inline-block;
+}
+input{
+    display: inline-block;
+}

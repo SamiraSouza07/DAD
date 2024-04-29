@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GermiCar</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header id="inicio">
+      <a href="#inicio"
+        ><img class="logo" src="assets/logo/logo-no-background.png" alt=""
+      /></a>
+      <nav>
+        <ul>
+          <li><a class="item-menu" href="#inicio">Início</a></li>
+          <li><a class="item-menu" href="#">Catálogo</a></li>
+          <li><a class="item-menu" href="#">Fale Conosco</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="secao-busca">
+        <form action="">
+          <div class="busca-container">
+            <input
+              placeholder="Nome do veículo"
+              type="search"
+              name="busca"
+              id="busca"
+            />
+            <span id="botao-busca"
+              ><img
+                id="imagem-busca"
+                src="assets/icones/lupa.svg"
+                alt="icone de busca"
+            /></span>
+          </div>
+          <select name="marca" id="marca">
+            <option value="" selected hidden>Marca</option>
+            <option value=""></option>
+            <option value="Honda">Honda</option>
+            <option value="Renault">Renault</option>
+            <option value="Fiat">Fiat</option>
+            <option value="Toyota">Toyota</option>
+            <option value="Jeep">Jeep</option>
+            <option value="Volkswagen">Volkswagen</option>
+            <option value="Ford">Ford</option>
+            <option value="Chevrolet">Chevrolet</option>
+            <option value="Hyundai">Hyundai</option>
+            <option value="Nissan">Nissan</option>
+          </select>
+          <select name="combustivel" id="combustivel">
+            <option value="" selected hidden>Combustível</option>
+            <option value=""></option>
+            <option value="Gasolina">Gasolina</option>
+            <option value="Flex">Flex</option>
+            <option value="Diesel">Diesel</option>
+          </select>
+          <label
+            ><input
+              type="radio"
+              name="cambio"
+              id="automatico"
+            />Automático</label
+          >
+          <label><input type="radio" name="cambio" id="manual" />Manual</label>
+          <label for="ar" id="ar"
+            ><input type="checkbox" name="ar" />Ar-condicionado</label
+          >
+        </form>
+      </section>
+      <section class="secao-veiculos">
+        <article class="card-veiculo oferta">
+          <img src="assets/carros/ARGO.png" alt="imagem de carro" />
+          <h2><span class="marca">Fiat</span> Argo</h2>
+          <div class="atributos-carro">
+            <span class="container-icone">
+              <img class="icone-carro" src="assets/icones/cambio.svg" alt="" />
+              Manual
+            </span>
+            <span class="container-icone">
+              <img
+                class="icone-carro"
+                src="assets/icones/combustivel.svg"
+                alt=""
+              />
+              Gasolina
+            </span>
+          </div>
+          <div class="container-precos">
+            <div class="info-precos">
+              <p class="preco-dia">R$55,00 por dia</p>
+              <p class="preco">3 dias <del class="preco-tres">R$165,00</del></p>
+            </div>
+            <h3 class="preco-desconto">R$110,00</h3>
+          </div>
+          <button class="btn-alugar">Alugar</button>
+        </article>
+        <article class="card-veiculo">
+          <img src="assets/carros/CRONOS.png" alt="imagem de carro" />
+          <h2><span class="marca">Fiat</span> Cronos</h2>
+          <div class="atributos-carro">
+            <span class="container-icone">
+              <img class="icone-carro" src="assets/icones/cambio.svg" alt="" />
+              Automático
+            </span>
+            <span class="container-icone">
+              <img
+                class="icone-carro"
+                src="assets/icones/combustivel.svg"
+                alt=""
+              />
+              Flex
+            </span>
+            <span class="container-icone">
+              <img class="icone-carro" src="assets/icones/ar.svg" alt="" />
+              Ar
+            </span>
+          </div>
+          <div class="container-precos">
+            <div class="info-precos">
+              <p class="preco-dia">R$55,00 por dia</p>
+              <p class="preco">3 dias <del class="preco-tres">R$165,00</del></p>
+            </div>
+            <h3 class="preco-desconto">R$120,00</h3>
+          </div>
+          <button class="btn-alugar">Alugar</button>
+        </article>
+        <article class="card-veiculo">
+          <img src="assets/carros/ETIOS.png" alt="imagem de carro" />
+          <h2><span class="marca">Toyota</span> Etios</h2>
+          <div class="atributos-carro">
+            <span class="container-icone">
+              <img class="icone-carro" src="assets/icones/cambio.svg" alt="" />
+              Manual
+            </span>
+            <span class="container-icone">
+              <img
+                class="icone-carro"
+                src="assets/icones/combustivel.svg"
+                alt=""
+              />
+              Flex
+            </span>
+            <span class="container-icone">
+              <img class="icone-carro" src="assets/icones/ar.svg" alt="" />
+              Ar
+            </span>
+          </div>
+          <div class="container-precos">
+            <div class="info-precos">
+              <p class="preco-dia">R$60,00 por dia</p>
+              <p class="preco">3 dias <del class="preco-tres">R$180,00</del></p>
+            </div>
+            <h3 class="preco-desconto">R$150,00</h3>
+          </div>
+          <button class="btn-alugar">Alugar</button>
+        </article>
+        <article class="card-veiculo">
+          <img src="assets/carros/ECOSPORT.png" alt="imagem de carro" />
+          <h2><span class="marca">Ford</span> Ecosport</h2>
+          <div class="atributos-carro">
+            <span class="container-icone">
+              <img class="icone-carro" src="assets/icones/cambio.svg" alt="" />
+              Automático
+            </span>
+            <span class="container-icone">
+              <img
+                class="icone-carro"
+                src="assets/icones/combustivel.svg"
+                alt=""
+              />
+              Flex
+            </span>
+          </div>
+          <div class="container-precos">
+            <div class="info-precos">
+              <p class="preco-dia">R$65,00 por dia</p>
+              <p class="preco">3 dias <del class="preco-tres">R$195,00</del></p>
+            </div>
+            <h3 class="preco-desconto">R$175,00</h3>
+          </div>
+          <button class="btn-alugar">Alugar</button>
+        </article>
+        <article class="card-veiculo">
+          <img src="assets/carros/VIRTUS.png" alt="imagem de carro" />
+          <h2><span class="marca">Volkswagen</span> Virtus</h2>
+          <div class="atributos-carro">
+            <span class="container-icone">
+              <img class="icone-carro" src="assets/icones/cambio.svg" alt="" />
+              Automático
+            </span>
+            <span class="container-icone">
+              <img
+                class="icone-carro"
+                src="assets/icones/combustivel.svg"
+                alt=""
+              />
+              Flex
+            </span>
+            <span class="container-icone">
+              <img class="icone-carro" src="assets/icones/ar.svg" alt="" />
+              Ar
+            </span>
+          </div>
+          <div class="container-precos">
+            <div class="info-precos">
+              <p class="preco-dia">R$65,00 por dia</p>
+              <p class="preco">3 dias <del class="preco-tres">R$195,00</del></p>
+            </div>
+            <h3 class="preco-desconto">R$180,00</h3>
+          </div>
+          <button class="btn-alugar">Alugar</button>
+        </article>
+        <article class="card-veiculo">
+          <img src="assets/carros/RENEGADE.png" alt="imagem de carro" />
+          <h2><span class="marca">Jeep</span> Renegade</h2>
+          <div class="atributos-carro">
+            <span class="container-icone">
+              <img class="icone-carro" src="assets/icones/cambio.svg" alt="" />
+              Automático
+            </span>
+            <span class="container-icone">
+              <img
+                class="icone-carro"
+                src="assets/icones/combustivel.svg"
+                alt=""
+              />
+              Diesel
+            </span>
+            <span class="container-icone">
+              <img class="icone-carro" src="assets/icones/ar.svg" alt="" />
+              Ar
+            </span>
+          </div>
+          <div class="container-precos">
+            <div class="info-precos">
+              <p class="preco-dia">R$80,00 por dia</p>
+              <p class="preco">3 dias <del class="preco-tres">R$240,00</del></p>
+            </div>
+            <h3 class="preco-desconto">R$220,00</h3>
+          </div>
+          <button class="btn-alugar">Alugar</button>
+        </article>
+        <article class="card-veiculo">
+          <img src="assets/carros/KICKS.png" alt="imagem de carro" />
+          <h2><span class="marca">Nissan</span> Kicks</h2>
+          <div class="atributos-carro">
+            <span class="container-icone">
+              <img class="icone-carro" src="assets/icones/cambio.svg" alt="" />
+              Automático
+            </span>
+            <span class="container-icone">
+              <img
+                class="icone-carro"
+                src="assets/icones/combustivel.svg"
+                alt=""
+              />
+              Flex
+            </span>
+            <span class="container-icone">
+              <img class="icone-carro" src="assets/icones/ar.svg" alt="" />
+              Ar
+            </span>
+          </div>
+          <div class="container-precos">
+            <div class="info-precos">
+              <p class="preco-dia">R$75,00 por dia</p>
+              <p class="preco">3 dias <del class="preco-tres">R$225,00</del></p>
+            </div>
+            <h3 class="preco-desconto">R$210,00</h3>
+          </div>
+          <button class="btn-alugar">Alugar</button>
+        </article>
+        <article class="card-veiculo">
+          <img src="assets/carros/BOLT.png" alt="imagem de carro" />
+          <h2><span class="marca">Chevrolet</span> Bolt</h2>
+          <div class="atributos-carro">
+            <span class="container-icone">
+              <img class="icone-carro" src="assets/icones/cambio.svg" alt="" />
+              Manual
+            </span>
+            <span class="container-icone">
+              <img
+                class="icone-carro"
+                src="assets/icones/combustivel.svg"
+                alt=""
+              />
+              Flex
+            </span>
+            <span class="container-icone">
+              <img class="icone-carro" src="assets/icones/ar.svg" alt="" />
+              Ar
+            </span>
+          </div>
+          <div class="container-precos">
+            <div class="info-precos">
+              <p class="preco-dia">R$70,00 por dia</p>
+              <p class="preco">3 dias <del class="preco-tres">R$210,00</del></p>
+            </div>
+            <h3 class="preco-desconto">R$200,00</h3>
+          </div>
+          <button class="btn-alugar">Alugar</button>
+        </article>
+        <article class="card-veiculo">
+          <img src="assets/carros/HB2X.png" alt="imagem de carro" />
+          <h2><span class="marca">Hyundai</span> HB20</h2>
+          <div class="atributos-carro">
+            <span class="container-icone">
+              <img class="icone-carro" src="assets/icones/cambio.svg" alt="" />
+              Automático
+            </span>
+            <span class="container-icone">
+              <img
+                class="icone-carro"
+                src="assets/icones/combustivel.svg"
+                alt=""
+              />
+              Gasolina
+            </span>
+            <span class="container-icone">
+              <img class="icone-carro" src="assets/icones/ar.svg" alt="" />
+              Ar
+            </span>
+          </div>
+          <div class="container-precos">
+            <div class="info-precos">
+              <p class="preco-dia">R$75,00 por dia</p>
+              <p class="preco">3 dias <del class="preco-tres">R$225,00</del></p>
+            </div>
+            <h3 class="preco-desconto">R$205,00</h3>
+          </div>
+          <button class="btn-alugar">Alugar</button>
+        </article>
+        <article class="card-veiculo oferta">
+          <img src="assets/carros/UNO.png" alt="imagem de carro" />
+          <h2><span class="marca">Fiat</span> Uno</h2>
+          <div class="atributos-carro">
+            <span class="container-icone">
+              <img class="icone-carro" src="assets/icones/cambio.svg" alt="" />
+              Manual
+            </span>
+            <span class="container-icone">
+              <img
+                class="icone-carro"
+                src="assets/icones/combustivel.svg"
+                alt=""
+              />
+              Gasolina
+            </span>
+          </div>
+          <div class="container-precos">
+            <div class="info-precos">
+              <p class="preco-dia">R$50,00 por dia</p>
+              <p class="preco">3 dias <del class="preco-tres">R$150,00</del></p>
+            </div>
+            <h3 class="preco-desconto">R$99,99</h3>
+          </div>
+          <button class="btn-alugar">Alugar</button>
+        </article>
+        <article class="card-veiculo">
+          <img src="assets/carros/K.png" alt="imagem de carro" />
+          <h2><span class="marca">Ford</span> Ka</h2>
+          <div class="atributos-carro">
+            <span class="container-icone">
+              <img class="icone-carro" src="assets/icones/cambio.svg" alt="" />
+              Manual
+            </span>
+            <span class="container-icone">
+              <img
+                class="icone-carro"
+                src="assets/icones/combustivel.svg"
+                alt=""
+              />
+              Flex
+            </span>
+          </div>
+          <div class="container-precos">
+            <div class="info-precos">
+              <p class="preco-dia">R$60,00 por dia</p>
+              <p class="preco">3 dias <del class="preco-tres">R$180,00</del></p>
+            </div>
+            <h3 class="preco-desconto">R$170,00</h3>
+          </div>
+          <button class="btn-alugar">Alugar</button>
+        </article>
+        <article class="card-veiculo">
+          <img src="assets/carros/YARIS.png" alt="imagem de carro" />
+          <h2><span class="marca">Toyota</span> Aris</h2>
+          <div class="atributos-carro">
+            <span class="container-icone">
+              <img class="icone-carro" src="assets/icones/cambio.svg" alt="" />
+              Manual
+            </span>
+            <span class="container-icone">
+              <img
+                class="icone-carro"
+                src="assets/icones/combustivel.svg"
+                alt=""
+              />
+              Diesel
+            </span>
+          </div>
+          <div class="container-precos">
+            <div class="info-precos">
+              <p class="preco-dia">R$65,00 por dia</p>
+              <p class="preco">3 dias <del class="preco-tres">R$195,00</del></p>
+            </div>
+            <h3 class="preco-desconto">R$170,00</h3>
+          </div>
+          <button class="btn-alugar">Alugar</button>
+        </article>
+        <article class="card-veiculo oferta">
+          <img src="assets/carros/GOLC.png" alt="imagem de carro" />
+          <h2><span class="marca">Volkswagen</span> Gol</h2>
+          <div class="atributos-carro">
+            <span class="container-icone">
+              <img class="icone-carro" src="assets/icones/cambio.svg" alt="" />
+              Manual
+            </span>
+            <span class="container-icone">
+              <img
+                class="icone-carro"
+                src="assets/icones/combustivel.svg"
+                alt=""
+              />
+              Gasolina
+            </span>
+          </div>
+          <div class="container-precos">
+            <div class="info-precos">
+              <p class="preco-dia">R$55,00 por dia</p>
+              <p class="preco">3 dias <del class="preco-tres">R$165,00</del></p>
+            </div>
+            <h3 class="preco-desconto">R$120,00</h3>
+          </div>
+          <button class="btn-alugar">Alugar</button>
+        </article>
+        <article class="card-veiculo">
+          <img src="assets/carros/LOGAN.png" alt="imagem de carro" />
+          <h2><span class="marca">Renault</span> Logan</h2>
+          <div class="atributos-carro">
+            <span class="container-icone">
+              <img class="icone-carro" src="assets/icones/cambio.svg" alt="" />
+              Manual
+            </span>
+            <span class="container-icone">
+              <img
+                class="icone-carro"
+                src="assets/icones/combustivel.svg"
+                alt=""
+              />
+              Gasolina
+            </span>
+            <span class="container-icone">
+              <img class="icone-carro" src="assets/icones/ar.svg" alt="" />
+              Ar
+            </span>
+          </div>
+          <div class="container-precos">
+            <div class="info-precos">
+              <p class="preco-dia">R$70,00 por dia</p>
+              <p class="preco">3 dias <del class="preco-tres">R$210,00</del></p>
+            </div>
+            <h3 class="preco-desconto">R$200,00</h3>
+          </div>
+          <button class="btn-alugar">Alugar</button>
+        </article>
+        <article class="card-veiculo">
+          <img src="assets/carros/VOYAGE.png" alt="imagem de carro" />
+          <h2><span class="marca">Volkswagen</span> Voyage</h2>
+          <div class="atributos-carro">
+            <span class="container-icone">
+              <img class="icone-carro" src="assets/icones/cambio.svg" alt="" />
+              Manual
+            </span>
+            <span class="container-icone">
+              <img
+                class="icone-carro"
+                src="assets/icones/combustivel.svg"
+                alt=""
+              />
+              Gasolina
+            </span>
+            <span class="container-icone">
+              <img class="icone-carro" src="assets/icones/ar.svg" alt="" />
+              Ar
+            </span>
+          </div>
+          <div class="container-precos">
+            <div class="info-precos">
+              <p class="preco-dia">R$50,00 por dia</p>
+              <p class="preco">3 dias <del class="preco-tres">R$150,00</del></p>
+            </div>
+            <h3 class="preco-desconto">R$140,00</h3>
+          </div>
+          <button class="btn-alugar">Alugar</button>
+        </article>
+        <article class="card-veiculo">
+          <img src="assets/carros/MOBI.png" alt="imagem de carro" />
+          <h2><span class="marca">Fiat</span> Mobi</h2>
+          <div class="atributos-carro">
+            <span class="container-icone">
+              <img class="icone-carro" src="assets/icones/cambio.svg" alt="" />
+              Automático
+            </span>
+            <span class="container-icone">
+              <img
+                class="icone-carro"
+                src="assets/icones/combustivel.svg"
+                alt=""
+              />
+              Gasolina
+            </span>
+          </div>
+          <div class="container-precos">
+            <div class="info-precos">
+              <p class="preco-dia">R$80,00 por dia</p>
+              <p class="preco">3 dias <del class="preco-tres">R$240,00</del></p>
+            </div>
+            <h3 class="preco-desconto">R$220,00</h3>
+          </div>
+          <button class="btn-alugar">Alugar</button>
+        </article>
+      </section>
+      <section class="garantias">
+        <div class="seguranca">
+          <img class="garantia-icone" src="assets/icones/garantia.svg" alt="" />
+          <ul>
+            <li>Veículos 100% assegurados</li>
+            <li>Película antivandalismo</li>
+            <li>Rastreadores</li>
+          </ul>
+        </div>
+        <div class="diferenciais">
+          <img
+            class="garantia-icone"
+            src="assets/icones/diferenciais.svg"
+            alt=""
+          />
+          <ul>
+            <li>Sem burocracia</li>
+            <li>Melhores preços do mercado</li>
+            <li>Veículos revisados periodicamente</li>
+          </ul>
+        </div>
+      </section>
+      <section class="faq">
+        <h2 class="faq-titulo">FAQ</h2>
+        <div class="lista-perguntas">
+          <a class="container-pergunta" href="#r1">
+            <div class="pergunta">
+              Como proceder caso o veículo seja <strong>danificado</strong>?
+            </div>
+          </a>
+          <div class="resposta" id="r1">
+            Caso o veículo seja danificado, deve-se comunicar no momento de sua
+            devolução. Após uma avadivação das avarias os custos de reparo serão
+            cobrados de acordo com o contrato.
+          </div>
+          <a class="container-pergunta" href="#r2">
+            <div class="pergunta">
+              Como proceder caso a <strong>data de entrega</strong> não for
+              cumprida?
+            </div>
+          </a>
+          <div class="resposta" id="r2">
+            Nessa situação deve-se avisar a locadora, de modo a renegociar a
+            locação do veículo, estipulando uma nova data de devolução. A
+            aplicação de multa seguirá os termos estipulados em contrato.
+          </div>
+          <a class="container-pergunta" href="#r3">
+            <div class="pergunta">
+              Como proceder caso o veículo seja
+              <strong>roubado</strong>?
+            </div>
+          </a>
+          <div class="resposta" id="r3">
+            Nessa situação o condutor deverá registrar prontamente um boletim de
+            ocorrência (BO) e comunicar a locadora imediatamente, enviando,
+            posteriormente o documento.
+          </div>
+          <a class="container-pergunta" href="#r4">
+            <div class="pergunta">
+              Como proceder caso o veículo tenha algum problema mecânico
+              <strong>problema mecânico</strong>?
+            </div>
+          </a>
+          <div class="resposta" id="r4">
+            Nessa situação o condutor deve informar a locadora que se
+            encarregará de fornecer outro veículo imediatamente.
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <img
+        class="logo-footer"
+        src="assets/logo/logo-no-background.png"
+        alt=""
+      />
+      <p><em>Preço baixo, garantia e segurança para sua locação</em></p>
+    </footer>
+  </body>
+</html>

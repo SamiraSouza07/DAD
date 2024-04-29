@@ -7,17 +7,154 @@ body {
   background-color: rgb(250, 241, 229);
 }
 header {
-  color: antiquewhite;
+  width: 100%;
+  color: rgb(250, 241, 229);
   text-align: center;
-  background-color: rgb(18, 151, 151);
+  background-color: rgb(18, 129, 151);
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
+  position: fixed;
+  padding: 5px 0px 10px;
+  box-shadow: 0px 0px 3px rgb(40, 40, 38);
+  z-index: 1;
 }
 #home {
+  left: 15px;
+}
+#git {
+  right: 17px;
+}
+.icon {
+  position: absolute;
   width: 30px;
-  padding-top: 5px;
+  cursor: pointer;
+  top: 10px;
+}
+.icon-mouse-em-cima {
+  filter: invert(20%);
 }
 h1 {
+  position: relative;
+  right: 10px;
   display: inline-block;
-  padding-bottom: 5px;
+  top: 1px;
+  user-select: none;
+}
+main {
+  position: absolute;
+  top: 90px;
+  width: 100%;
+}
+#lista-temas {
+  list-style: none;
+  width: 70%;
+  margin: 0 auto;
+}
+.temas {
+  user-select: none;
+  font-size: larger;
+  padding: 20px;
+  border-top: 2px rgb(18, 46, 45) solid;
+  border-bottom: 1px rgb(18, 46, 45) solid;
+  border-left: 1px rgb(18, 46, 45) solid;
+  border-right: 1px rgb(18, 46, 45) solid;
+  border-radius: 1px;
+  color: aliceblue;
+  font-weight: bold;
+  background-color: rgb(54, 130, 157);
+  cursor: pointer;
+}
+.temas-mouse-em-cima {
+  background-color: rgb(46, 112, 136);
+}
+.exp {
+  font-weight: normal;
+  font-size: medium;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  color: black;
+  background-color: rgb(250, 241, 229);
+  padding: 5px 15px 15px 15px;
+  height: fit-content;
+  box-shadow: 3px 5px 5px rgb(37, 94, 114);
+  cursor: auto;
+}
+.exp > h3 {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+code {
+  background-color: rgb(85, 185, 179);
+  padding: 10px;
+  display: inline-block;
+  margin: 15px 0px;
+  border-left: solid 5px rgb(37, 94, 114);
+  width: 80%;
+  border-radius: 2px;
+  line-height: 20px;
+}
+.exp-invisivel {
+  display: none;
+}
+.invisivel {
+  display: none;
+}
+.destacar {
+  background-color: antiquewhite;
+  display: inline;
+}
+.saida-console {
+  color: brown;
+  display: inline;
+}
+.btn-copy {
+  position: relative;
+  top: 7px;
+  background-color: rgb(18, 129, 151);
+  padding: 2px 5px 5px 5px;
+  color: antiquewhite;
+  border-radius: 3px;
+  font-family: Cambria;
+  cursor: pointer;
+}
+.btn-copy-mouse-em-cima {
+  background-color: rgb(20, 107, 124);
+}
+.quadrado {
+  width: 60px;
+  height: 60px;
+  background-color: antiquewhite;
+  box-shadow: 1px 2px 3px rgb(57, 123, 119);
+  margin: 0 auto;
+  margin-top: 20px;
+}
+input {
+  padding: 5px 10px;
+  font-size: 16px;
+  margin-top: 5px;
+  display: block;
+  border-radius: 5px;
+}
+#pesquisa-tema {
+  position: absolute;
+  top: 8px;
+  left: 90px;
+  height: 15px;
+  border: 2px solid rgb(42, 74, 72);
+}
+.fruta {
+  margin-top: 5px;
+  font-style: italic;
+  text-align: center;
+  padding: 5px 10px;
+  background-color: rgb(20, 107, 124);
+  color: aliceblue;
+  border-radius: 4px;
+}
+.inline-block {
+  display: inline-block;
+}
+.block {
+  display: block;
 }
