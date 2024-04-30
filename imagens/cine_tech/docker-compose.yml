@@ -1,9 +1,9 @@
 version: '3.8'
 services:
-  caca_letras:
+  cine_tech:
     build:
       context: .
       dockerfile: dockerfile
-    image: samirasouza/caca_letras:1.0
+    image: samirasouza/cine_tech:1.0
     ports:
-      - 12340:80
+      - 12341:80

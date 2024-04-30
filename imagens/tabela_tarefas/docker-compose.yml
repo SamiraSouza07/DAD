@@ -1,9 +1,9 @@
 version: '3.8'
 services:
-  caca_letras:
+  img_tabela_tarefas:
     build:
       context: .
       dockerfile: dockerfile
-    image: samirasouza/caca_letras:1.0
+    image: samirasouza/img_tabela_tarefas:1.1
     ports:
-      - 12340:80
+      - 12342:80

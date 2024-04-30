@@ -1,4 +1,4 @@
 const bt = document.getElementById("inicio")
 bt.addEventListener("click",()=>{
-    window.location.href = "../1-tela-inicial/index.html"
+    window.location.href = "../index.html"
 })

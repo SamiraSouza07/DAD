@@ -1,0 +1,29 @@
+
+# Imagem Calendário de tarefas
+
+É um programa onde é possivel inserir tarefas em uma tabela (calendário) em um horário e dia especifico da semana.
+
+## Linguagem
+- HTML
+- JS
+- CSS (1.1)
+
+## Funcionalidades (1.0)
+É possível:
+- Inserir tarefas em dias e horários especificos
+- Alterar uma tarefa especifica
+- Concluir uma tarefa específica
+- Excluir uma tarefa específica
+- Trocar duas tarefas de lugar
+- Salvar os dados no navegador
+- Recriar a tela com os dados salvos
+
+## Funcionalidades (1.1)
+É possível:
+- Inserir tarefas em dias e horários especificos
+- Concluir uma tarefa específica ao clicar nela
+- Excluir uma tarefa específica ao clicar no icone de X ao lado da tarefa
+
+## Autores
+- GitHub: [Samira Souza](https://www.github.com/SamiraSouza07)
+- DockerHub: [Samira Souza](https://hub.docker.com/u/samirasouza)

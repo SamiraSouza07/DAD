@@ -1,0 +1,96 @@
+body {
+  background-color: bisque;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  text-align: center;
+}
+#coluna1,
+#coluna2,
+#bloco-total-label,
+#bloco-total-valor {
+  display: inline-block;
+}
+#bloco-total-label {
+  margin-left: 20px;
+  margin-right: 30px;
+}
+#coluna1 {
+  margin-right: 35px;
+}
+h2 {
+  margin-bottom: 3px;
+}
+#bloco-total-valor {
+  margin-left: 55px;
+}
+#coluna2 {
+  margin-left: 35px;
+}
+#bloco-principal {
+  background-color: rgb(242, 202, 153);
+  padding: 10px 20px;
+  border-radius: 20px;
+  width: fit-content;
+  display: inline-block;
+  border: solid 2px rgb(76, 11, 11);
+  margin-top: 30px;
+}
+#maior {
+  text-align: center;
+}
+#linha {
+  height: 1px;
+  width: 270px;
+  background-color: black;
+  border-radius: 2px;
+}
+.btn {
+  width: 10%;
+  padding: 2px 3px;
+  margin-bottom: 5px;
+  color: rgb(84, 67, 45);
+  font-weight: bold;
+  font-size: larger;
+  border-radius: 5px;
+  border: 2px solid rgb(84, 67, 45);
+  background-color: antiquewhite;
+  cursor: pointer;
+}
+.btn-em-cima {
+  border: 2px solid rgb(67, 53, 35);
+  background-color: rgb(225, 210, 191);
+  color: rgb(67, 53, 35);
+}
+.btn-final {
+  width: 20%;
+  padding: 5px 7px;
+  font-weight: bold;
+  font-size: larger;
+  border-radius: 5px;
+  background-color: rgb(92, 161, 91);
+  cursor: pointer;
+  border: 2px solid rgb(58, 103, 57);
+  color: antiquewhite;
+}
+.selecionado {
+  background-color: rgb(92, 161, 91);
+  color: rgb(250, 243, 232);
+}
+.selecionado-em-cima {
+  background-color: rgb(64, 116, 64);
+  color: rgb(230, 223, 211);
+}
+.btn-final-em-cima {
+  background-color: rgb(70, 126, 69);
+  border: 2px solid rgb(51, 91, 50);
+}
+#bloco-botoes {
+  margin-top: 20px;
+}
+#btn-final {
+  margin-top: 25px;
+}
+img {
+  width: 15%;
+  margin-top: 10px;
+}

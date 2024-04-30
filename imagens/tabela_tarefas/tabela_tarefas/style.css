@@ -1,0 +1,76 @@
+body {
+  background-color: antiquewhite;
+  font-family: "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode",
+    Geneva, Verdana, sans-serif;
+  user-select: none;
+}
+td,
+th {
+  margin: 0px;
+  border-radius: 2px;
+  border: rgb(91, 64, 33) 1.5px solid;
+}
+th {
+  background-color: bisque;
+  padding: 3px;
+}
+img {
+  width: 3%;
+}
+table {
+  padding: 0px;
+  border: antiquewhite solid 3px;
+}
+h1 {
+  text-align: center;
+  font-family: "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode",
+    Geneva, Verdana, sans-serif;
+}
+input,
+select {
+  font-family: "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode",
+    Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  border-radius: 5px;
+  border: solid 1.5px rgb(91, 64, 33);
+}
+label {
+  font-weight: bold;
+}
+#bloco-input {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.x-invisivel {
+  width: 15px;
+  margin-left: 10px;
+  display: none;
+}
+.x-aparecer {
+  display: inline-block;
+}
+.concluida {
+  text-decoration: line-through;
+}
+.tarefas {
+  cursor: pointer;
+}
+#bloco-botao {
+  text-align: center;
+}
+.btn {
+  background-color: rgb(48, 131, 48);
+  color: aliceblue;
+  font-weight: bold;
+  padding: 7px 10px;
+  border-radius: 10px;
+  font-family: "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode",
+    Geneva, Verdana, sans-serif;
+  cursor: pointer;
+}
+.btn-sem-selecao {
+  cursor: not-allowed;
+}
+.bloco-tarefas {
+  width: fit-content;
+}

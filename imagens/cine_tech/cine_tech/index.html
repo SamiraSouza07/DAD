@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="assets/pipoca.png" type="image/x-icon" />
+    <title>Cine Tech</title>
+    <script src="cinema.js" defer></script>
+  </head>
+  <body>
+    <h2>Assentos</h2>
+    <table border="1" align="center" width="100%" height="300" id="cinema">
+      <tr>
+        <th colspan="20" id="tela">Tela</th>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><s>A1</s></td>
+        <td><s>A2</s></td>
+        <td><s>A3</s></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>A4</td>
+        <td>A5</td>
+        <td>A6</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>B1</td>
+        <td>B2</td>
+        <td>B3</td>
+        <td>B4</td>
+        <td>B5</td>
+        <td>B6</td>
+        <td>B7</td>
+        <td>B8</td>
+        <td>B9</td>
+        <td>B10</td>
+        <td>B11</td>
+        <td>B12</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td>C1</td>
+        <td>C2</td>
+        <td><s>C3</s></td>
+        <td>C4</td>
+        <td>C5</td>
+        <td>C6</td>
+        <td>C7</td>
+        <td>C8</td>
+        <td>C9</td>
+        <td><s>C10</s></td>
+        <td><s>C11</s></td>
+        <td>C12</td>
+        <td>C13</td>
+        <td>C14</td>
+        <td>C15</td>
+        <td>C16</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>D1</td>
+        <td>D2</td>
+        <td>D3</td>
+        <td>D4</td>
+        <td>D5</td>
+        <td>D6</td>
+        <td>D7</td>
+        <td>D8</td>
+        <td>D9</td>
+        <td>D10</td>
+        <td>D11</td>
+        <td>D12</td>
+        <td>D13</td>
+        <td>D14</td>
+        <td>D15</td>
+        <td>D16</td>
+        <td>D17</td>
+        <td>D18</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>E1</td>
+        <td>E2</td>
+        <td>E3</td>
+        <td>E4</td>
+        <td>E5</td>
+        <td>E6</td>
+        <td><s>E7</s></td>
+        <td>E8</td>
+        <td>E9</td>
+        <td>E10</td>
+        <td>E11</td>
+        <td>E12</td>
+        <td>E13</td>
+        <td>E14</td>
+        <td>E15</td>
+        <td>E16</td>
+        <td>E17</td>
+        <td>E18</td>
+        <td>E19</td>
+        <td>E20</td>
+      </tr>
+      <tr>
+        <td>F1</td>
+        <td>F2</td>
+        <td>F3</td>
+        <td>F4</td>
+        <td>F5</td>
+        <td>F6</td>
+        <td>F7</td>
+        <td>F8</td>
+        <td>F9</td>
+        <td>F10</td>
+        <td>F11</td>
+        <td>F12</td>
+        <td>F13</td>
+        <td>F14</td>
+        <td><s>F15</s></td>
+        <td><s>F16</s></td>
+        <td><s>F17</s></td>
+        <td><s>F18</s></td>
+        <td><s>F19</s></td>
+        <td><s>F20</s></td>
+      </tr>
+    </table>
+
+    <h2>Resumo da compra</h2>
+    <div id="bloco-tabela2-qnt">
+      <div id="bloco-tabela2">
+        <table border="1" width="50%" id="table2">
+          <tr>
+            <th>Produto</th>
+            <th>Quantidade</th>
+            <th>Subtotal</th>
+          </tr>
+          <tr>
+            <th><img src="assets/ingresso.png" alt="" class="img" /></th>
+            <td align="center" id="n-ingressos">0</td>
+            <td align="center" id="valor-ingressos">R$ 0,00</td>
+          </tr>
+          <tr>
+            <th><img src="assets/pipoca.png" alt="" class="img" /></th>
+            <td align="center" id="n-pipocas">0</td>
+            <td align="center" id="valor-pipocas">R$ 0,00</td>
+          </tr>
+          <tr>
+            <th><img src="assets/refri.png" alt="" class="img" /></th>
+            <td align="center" id="n-refris">0</td>
+            <td align="center" id="valor-refris">R$ 0,00</td>
+          </tr>
+          <tr>
+            <th>Total</th>
+            <td align="center" id="n-total">0</td>
+            <td align="center" id="valor-total">R$ 0,00</td>
+          </tr>
+        </table>
+      </div>
+      <div id="bloco-btn-qnt">
+        <p>Quantidade de pipocas</p>
+        <button class="btn-menor" id="-pipoca">-</button>
+        <button class="btn-menor" id="+pipoca">+</button>
+        <p>Quantidade de refris</p>
+        <button class="btn-menor" id="-refri">-</button>
+        <button class="btn-menor" id="+refri">+</button>
+        <br />
+        <br />
+        <br />
+      </div>
+    </div>
+    <div id="bloco-lista-maior">
+      <div id="bloco-lista">
+        <table border="1" width="40%" height="50" id="table3">
+          <tr>
+            <th>Assentos</th>
+            <td align="center" id="assentos"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div id="bloco-botao">
+      <button id="finalizar" class="btn">Finalizar</button>
+    </div>
+  </body>
+</html>

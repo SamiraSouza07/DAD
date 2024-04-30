@@ -1,0 +1,26 @@
+# Imagem Caça Letras
+
+É um jogo desenvolvido em html, js e css onde o objetivo é capturar letras espalhadas pela tela.
+
+## Linguagem
+
+- HTML
+- JS
+- CSS
+
+## Funcionalidades
+
+É possível:
+
+- Selecionar quais teclas o jogador quer usar para movimentar o personagem
+- Escolher uma cor e uma carinha para o personagem
+- Movimentar o personagem nos eixos X e Y
+
+## Como ultilizar a imagem
+
+Basta dar um pull na imagem, criar um container e definir uma porta para ele, apos isso basta acessar a porta e na barra do navegador acresentar "/index.html"
+
+## Autores
+
+- GitHub: [Samira Souza](https://www.github.com/SamiraSouza07)
+- DockerHub: [Samira Souza](https://hub.docker.com/u/samirasouza)

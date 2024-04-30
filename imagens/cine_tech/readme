@@ -1,0 +1,24 @@
+# Imagem Cine tech
+
+É um programa desenvolvido em html, css e js, onde é possivel simular a compra de ingressos em um cinema.
+
+## Linguagem
+
+- HTML
+- JS
+- CSS
+
+## Funcionalidades
+
+É possível:
+- Selecionar quais acentos o usuários deseja comprar
+- Escolher uma quantidade de pipocas
+- Escolher uma quantidade de refris
+- Finalizar a compra
+- Visualizar seu pedido
+- Pagar
+
+## Autores
+
+- GitHub: [Samira Souza](https://www.github.com/SamiraSouza07)
+- DockerHub: [Samira Souza](https://hub.docker.com/u/samirasouza)

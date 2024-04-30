@@ -1,1 +1,2 @@
 FROM nginx
+COPY ./caca_letras/ /usr/share/nginx/html

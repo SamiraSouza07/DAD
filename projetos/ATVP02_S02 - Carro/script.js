@@ -30,13 +30,7 @@ campoPesquisaNome.addEventListener("keyup", (e) => {
 
 const marca = document.getElementById("marca");
 marca.addEventListener("change", () => {
-  for (let i = 0; i < carrosGeral.length; i++) {
-    if (carrosGeral[i].children[1].children[0].textContent == marca.value) {
-      carrosGeral[i].classList.remove("invisivel");
-    } else {
-      carrosGeral[i].classList.add("invisivel");
-    }
-  }
+  buscaMarcas();
 });
 
 const combustivel = document.getElementById("combustivel");
@@ -49,7 +43,11 @@ combustivel.addEventListener("change", () => {
     ) {
       carrosGeral[i].classList.remove("invisivel");
     } else {
-      carrosGeral[i].classList.add("invisivel");
+      if (combustivel.value == "") {
+        carrosGeral[i].classList.remove("invisivel");
+      } else {
+        carrosGeral[i].classList.add("invisivel");
+      }
     }
   }
 });
@@ -74,6 +72,23 @@ function buscarTexto() {
       carrosGeral[i].classList.add("invisivel");
     } else {
       carrosGeral[i].classList.remove("invisivel");
+    }
+  }
+}
+
+function buscaMarcas() {
+  const marcas = document.getElementsByClassName("marca");
+  for (let i = 0; i < marcas.length; i++) {
+    if (
+      marcas[i].textContent.toLowerCase() == marca.value.toLocaleLowerCase()
+    ) {
+      carrosGeral[i].classList.remove("invisivel");
+    } else {
+      if (marca.value == "") {
+        carrosGeral[i].classList.remove("invisivel");
+      } else {
+        carrosGeral[i].classList.add("invisivel");
+      }
     }
   }
 }

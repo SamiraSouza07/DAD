@@ -1,0 +1,120 @@
+body {
+  background-color: bisque;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  user-select: none;
+}
+h2 {
+  text-align: center;
+}
+td,
+tr,
+th {
+  padding: 5px;
+}
+#cinema {
+  width: 90%;
+  text-align: center;
+}
+#bloco-tabela2-qnt {
+  text-align: center;
+  vertical-align: middle;
+}
+#table2 {
+  width: 30%;
+}
+#table3 {
+  margin-top: 15px;
+  width: 100%;
+}
+#bloco-btn-qnt {
+  width: fit-content;
+  text-align: center;
+  display: inline-block;
+}
+#bloco-lista-maior {
+  text-align: center;
+  margin: 5px;
+}
+#bloco-lista {
+  display: inline-block;
+}
+#bloco-tabela2 {
+  display: inline-block;
+}
+td {
+  font-size: 20px;
+}
+th {
+  font-size: larger;
+}
+
+.btn {
+  padding: 10px;
+  margin: 20px;
+  background-color: rgb(92, 161, 91);
+  color: rgb(250, 243, 232);
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  border: 1.5px solid rgb(84, 67, 45);
+  width: fit-content;
+}
+.btn-selecionado-finalizar {
+  background-color: rgb(71, 126, 70);
+  border: 1.5px solid rgb(74, 59, 40);
+}
+.btn-menor {
+  width: 20%;
+  padding: 2px 3px;
+  margin-bottom: 5px;
+  color: rgb(84, 67, 45);
+  font-weight: bold;
+  font-size: larger;
+  border-radius: 5px;
+  border: 2px solid rgb(84, 67, 45);
+  background-color: antiquewhite;
+  cursor: pointer;
+}
+.assento {
+  font-size: large;
+  user-select: none;
+  border-radius: 5px;
+  border: solid bisque;
+}
+.sem-assento {
+  background-color: rgb(223, 210, 191);
+  cursor: not-allowed;
+}
+.ocupado {
+  color: rgb(255, 238, 238);
+  background-color: brown;
+  cursor: not-allowed;
+}
+.nao-ocupado {
+  background-color: rgb(111, 190, 110);
+  cursor: pointer;
+}
+.selecionado {
+  background-color: rgb(136, 136, 218);
+  border: rgb(66, 66, 108) 2px solid;
+  cursor: pointer;
+}
+.img {
+  width: 35px;
+  margin: 3px;
+}
+#bloco-botao {
+  text-align: center;
+}
+#tela {
+  background-color: rgb(25, 25, 26);
+  color: aliceblue;
+}
+.btn-selecionado {
+  border: 2px solid rgb(59, 47, 31);
+  background-color: rgb(234, 219, 200);
+}
