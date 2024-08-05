@@ -1,0 +1,13 @@
+#terminal{
+    width: 46%;
+    height: 250px;
+    padding: 10px;
+    display: inline-block;
+    background-color: antiquewhite;
+}
+input{
+    width: 42%;
+}
+.invisivel{
+    display: none;
+}

@@ -54,10 +54,12 @@ combustivel.addEventListener("change", () => {
 
 const automatico = document.getElementById("automatico");
 const manual = document.getElementById("manual");
-if (automatico.checked) {
-  console.log(carrosGeral[i].children[2].children[0].textContent);
-} else if (manual.checked) {
-}
+automatico.addEventListener('click',()=>{
+  buscarAutoManu("Automático")
+})
+manual.addEventListener('click',()=>{
+  buscarAutoManu("Manual")
+})
 
 function buscarTexto() {
   const conteudoInputPesquisa = campoPesquisaNome.value
@@ -85,6 +87,23 @@ function buscaMarcas() {
       carrosGeral[i].classList.remove("invisivel");
     } else {
       if (marca.value == "") {
+        carrosGeral[i].classList.remove("invisivel");
+      } else {
+        carrosGeral[i].classList.add("invisivel");
+      }
+    }
+  }
+}
+
+function buscarAutoManu(direcaoParam){
+  const direcao = document.getElementsByClassName('container-icone')
+  for (let i = 0; i < carrosGeral.length; i++) {
+    if (
+      direcao[i].textContent.toLowerCase().trim() == direcaoParam.toLowerCase()
+    ) {
+      carrosGeral[i].classList.remove("invisivel");
+    } else {
+      if (direcaoParam.value == "") {
         carrosGeral[i].classList.remove("invisivel");
       } else {
         carrosGeral[i].classList.add("invisivel");

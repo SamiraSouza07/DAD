@@ -1,13 +1,13 @@
 const opcoes = document.getElementsByClassName("opcao");
 const opcoes1 = document.getElementsByClassName("opcao1");
 const jogar = document.getElementById("jogar");
-const voltar = document.getElementById("voltar")
+const voltar = document.getElementById("voltar");
 
-voltar.addEventListener("click",(e)=>{
-    if(e.target == voltar){
-        window.location.href = "../index.html"
-    }
-})
+voltar.addEventListener("click", (e) => {
+  if (e.target == voltar) {
+    window.location.href = "../index.html";
+  }
+});
 let estilo;
 let acessorio;
 let qnt = 0;
@@ -57,7 +57,7 @@ for (let i = 0; i < opcoes1.length; i++) {
         document.getElementsByClassName("selecionado").length;
 
       const nome = document.getElementById("nome").value.textContent;
-      if (nome != "" && selecionado2 == 2 ) {
+      if (nome != "" && selecionado2 == 2) {
         jogar.classList.remove("invisivel");
         jogar.classList.add("button");
       } else {
