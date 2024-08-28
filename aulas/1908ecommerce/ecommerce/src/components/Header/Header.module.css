@@ -1,0 +1,57 @@
+.fundo {
+  display: flex;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  height: 70px;
+  box-sizing: border-box;
+  justify-content: center;
+  border-bottom: solid .5px grey;
+  margin-bottom:50px;
+}
+.menu {
+  display: flex;
+  align-items: center;
+}
+.p,
+.home {
+  margin: 40px;
+}
+.home {
+  text-decoration: underline;
+  text-underline-offset: 5px
+}
+h2 {
+  margin-right: 100px;
+  font-size: 20px;
+}
+.pesquisa {
+  margin-left: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #ededed;
+  border: none;
+  border-radius: 0.5px;
+  color: #6e6e6e;
+  box-sizing: border-box;
+}
+.lupa {
+  margin-left: 15px;
+  height: 15px;
+}
+.coracao{
+    margin-left: 15px;
+    height: 15px;
+}
+.carrinho{
+    margin-left: 15px;
+    height: 20px;
+    width: 20px;
+}

@@ -1,0 +1,99 @@
+.card{
+    width: 250px;
+    height: 350px;
+    box-sizing: border-box;
+}
+.containerFoto{
+    background-color: #F5F5F5;
+    width: 90%;
+    height: 60%;
+    margin:auto;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 3%;
+}
+.containerFoto>img{
+    position: relative;
+    top: -80px;
+    left: 25px;
+    width: 70%;
+    height: 75%;
+}
+.containerFoto>p{
+    background-color: #DB4444;
+    height: 12%;
+    width: 20%;
+    border-radius: 10%;
+    padding: 3px;
+}
+.mensagem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: #fff;
+    height: 30px;
+    width: 225px;
+    margin: auto;
+    position: relative;
+    top:-88px;
+    left: -10px;
+    border-bottom-left-radius: 3%;
+    border-bottom-right-radius: 3%;
+}
+.estrelas{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    width: 90%;
+    justify-content: start;
+    align-items: center;
+    margin-top: 3px;
+}
+.estrela{
+    width: 18px;
+    height: 17px;
+}
+.mensagem>h1{
+    font-weight: 400;
+}
+.redondo{
+    position: relative;
+    right: -170px;
+    top:-27px;
+    background-color: #fff;
+    width: 13%;
+    height: 13%;
+    padding: 3px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.redondo>img{
+    width: 15px;
+    height: 12px;
+}
+.info{
+    width: 90%;
+    margin:auto;
+    margin-top:10px
+}
+.info>h3{
+    font-size: 16px;
+    font-weight: 600;
+}
+.preco{
+    display: flex;
+    gap: 15px;
+    font-weight: 500;
+    color: #DB4444;
+}
+.preco>p{
+    font-size: 16px;
+}
+.preco p:nth-child(2) {
+    text-decoration: line-through;
+    color: rgb(0,0,0,.5);
+}

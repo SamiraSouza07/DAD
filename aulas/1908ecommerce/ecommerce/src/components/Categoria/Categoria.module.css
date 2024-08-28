@@ -1,0 +1,20 @@
+.fundo>h2{
+    color: #DB4444;
+    font-size: 15px;
+    margin-left:15px;
+    font-weight: 600;
+}
+.fundo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    height: 45px;
+}
+.retanguloVermelho{
+    background-color: #DB4444;
+    width: 20px;
+    height: 100%;
+    border-radius: 15%;
+}

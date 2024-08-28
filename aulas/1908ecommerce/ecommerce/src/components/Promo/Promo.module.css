@@ -1,0 +1,40 @@
+.fundo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgb(14, 14, 15);
+  height: 60px;
+  color: aliceblue;
+  text-align: center;
+  align-items: end;
+  padding-top: 5px;
+  padding-left: 340px;
+  padding-right: 300px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+}
+a {
+  margin-left: 10px;
+  text-decoration: none;
+}
+a:visited {
+  color: aliceblue;
+}
+a:hover {
+  color: rgb(183, 193, 202);
+}
+a:active {
+  color: rgb(87, 101, 113);
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 200px;
+}
+.img {
+  margin-left:10px;
+  width: 15px;
+  height: 10px;
+}
