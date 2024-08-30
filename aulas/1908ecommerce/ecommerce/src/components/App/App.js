@@ -1,9 +1,9 @@
 import {useState} from "react"
 import styles from "./App.module.css";
-import Promo from "../Promo/Promo.js"
-import Header from "../Header/Header.js"
-import Main from "../Main/Main.js"
-import Footer from "../Footer/Footer.js"
+import Promo from "../Principais/Promo/Promo.js"
+import Header from "../Principais/Header/Header.js"
+import Main from "../Principais/Main/Main.js"
+import Footer from "../Principais/Footer/Footer.js"
 
 
 function App() {

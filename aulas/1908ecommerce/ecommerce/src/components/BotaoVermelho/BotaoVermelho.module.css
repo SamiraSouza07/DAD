@@ -1,0 +1,19 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 80%;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+.container>button{
+    width: 20%;
+    height: 90%;
+    border: none;
+    background-color: #DB4444;
+    color: #fff;
+    border-radius: 3px;
+
+}

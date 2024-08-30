@@ -1,7 +1,7 @@
 import styles from "./Header.module.css";
-import lupa from "../../assets/lupa.png";
-import coracao from "../../assets/coracao.png";
-import carrinho from "../../assets/carrinho.png";
+import lupa from "../../../assets/lupa.png";
+import coracao from "../../../assets/coracao.png";
+import carrinho from "../../../assets/carrinho.png";
 
 function Header() {
   return (

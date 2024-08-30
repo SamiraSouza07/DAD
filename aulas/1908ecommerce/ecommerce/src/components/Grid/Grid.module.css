@@ -1,0 +1,119 @@
+.gridContainer{
+    display: grid;
+    grid-template-columns: repeat(1fr,4);
+    grid-template-rows: repeat(1fr,2);
+    grid-template-areas: 
+    'principal principal secundario secundario'
+    'principal principal terciario1 terciario2';
+    width: 80%;
+    margin: auto;
+    height: 530px;
+    gap: 30px;
+    color: #fff;
+}
+.imagem1{
+    position: relative;
+    top:3923px;
+}
+.imagem2{
+    position: relative;
+    top:3900px;
+    right:140px;
+}
+.imagem3{
+    position: relative;
+    top:4210px;
+    right:323px;
+}
+.imagem4{
+    position: relative;
+    top:4210px;
+    right:140px;
+}
+.principal{
+    position: relative;
+    right: 90px;
+    top:180px
+}
+.secundario{
+    position: relative;
+    right: 100px;
+    top:50px
+}
+.terciario1,.terciario2{
+    position: relative;
+    left: 20px;
+    top:60px
+}
+.gridItem{
+    background-color: #0c0c0c;
+    border-radius: 3px;
+    padding-left: 15px;
+}
+.gridItem>div{
+    position: absolute;
+    z-index: 1;
+
+}
+.gridItem>div>h3{
+    font-size: 24px;
+    font-weight: 500;
+    
+}
+
+.gridItem>div>p:nth-child(3){
+    text-decoration: underline;
+    text-underline-offset: 5px; 
+    margin-top: 5px;
+}
+.gridItem>div>p:nth-child(2){
+    margin-top: 5px;
+    width: 250px;
+    font-size: 13px;
+}
+.gridItem>img{
+    position: absolute;
+    z-index: 0;
+    width: 20%;
+}
+.gridContainer>div:nth-child(1){
+    grid-area: principal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.gridContainer>div:nth-child(1)>img{
+width: 50%;
+}
+.gridContainer>div:nth-child(2){
+    grid-area: secundario;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.gridContainer>div:nth-child(2)>img{
+    order: 1;
+    width: 17.5%;
+}
+.gridContainer>div:nth-child(3){
+    grid-area: terciario1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.gridContainer>div:nth-child(3)>img{
+    width: 25%;
+}
+.gridContainer>div:nth-child(4){
+    grid-area: terciario2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.gridContainer>div:nth-child(4)>img{
+    width: 16%;
+}

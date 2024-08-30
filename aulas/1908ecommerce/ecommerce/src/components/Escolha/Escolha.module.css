@@ -1,0 +1,24 @@
+.quadrado,.quadrado2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 15%;
+    height: 90px;
+    border: solid 1.5px #c3c1c1;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 15px;
+    margin-top:0;
+    margin-bottom: 60px;
+}
+.quadrado>img{
+    margin-bottom: 10px;
+}
+.quadrado2>img{
+    margin-bottom: 10px;
+}
+.quadrado2{
+    background-color: #DB4444;
+    color:#fff
+}

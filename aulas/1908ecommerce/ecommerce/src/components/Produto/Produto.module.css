@@ -3,6 +3,29 @@
     height: 350px;
     box-sizing: border-box;
 }
+.containerCirculos{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    width: 90%;
+    justify-content: start;
+    align-items: center;
+}
+.circulo,.circuloPrincipal{
+    border-radius: 100%;
+}
+.circulo{
+    height: 30%;
+    width: 10.5%;
+    color: rgb(0,0,0,0);
+}
+.circuloPrincipal{
+    border: solid #000;
+    height: 20px;
+    box-sizing: border-box;
+    width: 10%;
+}
 .containerFoto{
     background-color: #F5F5F5;
     width: 90%;
@@ -19,12 +42,22 @@
     width: 70%;
     height: 75%;
 }
-.containerFoto>p{
-    background-color: #DB4444;
+.promocao,.promocao2,.novo{
     height: 12%;
     width: 20%;
     border-radius: 10%;
     padding: 3px;
+}
+.promocao{
+    background-color: #DB4444;
+    color:#fff
+}
+.promocao2{
+    background-color: rgb(0,0,0,0);
+}
+.novo{
+    background-color: #00FF66;
+    color:#fff
 }
 .mensagem{
     display: flex;
@@ -38,8 +71,8 @@
     position: relative;
     top:-88px;
     left: -10px;
-    border-bottom-left-radius: 3%;
-    border-bottom-right-radius: 3%;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
 }
 .estrelas{
     display: flex;
@@ -53,6 +86,9 @@
 .estrela{
     width: 18px;
     height: 17px;
+}
+.estrelas>p{
+    color: rgb(0,0,0,.5);
 }
 .mensagem>h1{
     font-weight: 400;

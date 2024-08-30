@@ -1,5 +1,5 @@
 import styles from "./Promo.module.css"
-import seta from "../../assets/icon2.png"
+import seta from "../../../assets/icon2.png"
 
 function Promo(){
     return(

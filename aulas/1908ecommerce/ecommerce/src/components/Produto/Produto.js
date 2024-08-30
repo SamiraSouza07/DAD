@@ -6,6 +6,33 @@ import estrelaMetade from "../../assets/estrelaMetade.png"
 import estrelaVazia from "../../assets/estrelaVazia.png"
 let estrelas = []
 function Produto(props) {
+  function cores(){
+    if(props.cores=="true"){
+      return(
+        <>
+        <div className={styles.containerCirculos} >
+          <div style={{backgroundColor: props.cor1}} id="circulo1" className={styles.circuloPrincipal}></div>
+          <div style={{backgroundColor: props.cor2}} id="circulo2"className={styles.circulo}>o</div>
+        </div>
+        </>
+      )
+    }
+  }
+
+  function promocao(){
+    if(props.promocao){
+    return(
+      <>
+      <p className={styles.promocao}>{props.promocao}</p>
+      </>
+    )
+  }else if(props.novo =="true"){
+    return(<p className={styles.novo}> NEW !</p>)
+  }
+  else{
+    return(<p className={styles.promocao2}></p>)
+  }
+  }
   function mensagem(){
     if(props.mensagem=="true"){
     return(
@@ -39,7 +66,7 @@ function Produto(props) {
     <>
       <div className={styles.card}>
         <div className={styles.containerFoto}>
-          <p>{props.promocao}</p>
+          {promocao()}
           <div className={styles.redondo}>
             <img src={coracao} alt="" />
           </div>
@@ -57,7 +84,9 @@ function Produto(props) {
           </div>
           <div className={styles.estrelas}>
             {avaliacao()}
+            <p>({props.qntAvaliacao})</p>
           </div>
+          {cores()}
         </div>
       </div>
     </>

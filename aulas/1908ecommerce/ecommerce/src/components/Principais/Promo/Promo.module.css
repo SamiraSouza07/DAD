@@ -31,7 +31,10 @@ a:active {
   align-items: center;
   justify-content: center;
   position: absolute;
-  right: 200px;
+  right: 150px;
+}
+.container>p{
+  font-size: 13px;
 }
 .img {
   margin-left:10px;
