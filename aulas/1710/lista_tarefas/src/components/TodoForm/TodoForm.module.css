@@ -1,0 +1,16 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    margin: 10px;
+    padding: 5px;
+    gap:5px
+}
+.tarefa{
+    height: 20px;
+    width: 200px;
+    padding: 2px 5px;
+    border: solid rgb(40, 58, 75) .5px;
+    border-radius: 3px;
+}

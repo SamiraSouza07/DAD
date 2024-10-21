@@ -1,0 +1,10 @@
+.lista{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: fit-content;
+    padding: 20px;
+    border: solid rgb(164, 170, 176);
+    border-radius: 5px;
+}

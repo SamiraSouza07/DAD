@@ -1,0 +1,12 @@
+.titulo {
+  text-align: center;
+}
+.container {
+  border: solid grey 2px;
+  border-radius: 10px;
+  width: fit-content;
+  padding: 10px 30px;
+  margin: auto;
+  margin-top: 10px;
+  padding-bottom: 25px;
+}

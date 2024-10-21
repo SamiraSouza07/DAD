@@ -1,0 +1,32 @@
+.item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(229, 236, 243);
+    width: fit-content;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: solid rgb(144, 149, 154)
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-left: 30px;
+}
+.editar,.remover{
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: aliceblue;
+}
+.editar{
+    background-color: rgb(255, 174, 0);
+    border: solid rgb(241, 241, 146);
+
+}
+.remover{
+    background-color: rgb(228, 16, 16);
+    border: solid rgb(244, 114, 114);
+
+}
