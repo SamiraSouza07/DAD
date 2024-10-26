@@ -2,18 +2,28 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     gap: 10px;
     background-color: rgb(229, 236, 243);
-    width: fit-content;
+    width: 270px;
     padding: 5px 15px;
     border-radius: 5px;
     border: solid rgb(144, 149, 154)
 }
+.p{
+    user-select: none;
+    cursor: pointer;
+}
+.completa{
+    user-select: none;
+    cursor: pointer;
+    text-decoration: line-through;
+}
 .buttons{
     display: flex;
-    flex-direction: row;
     gap: 5px;
-    margin-left: 30px;
+    position: relative;
+    left :10px
 }
 .editar,.remover{
     padding: 5px 10px;
