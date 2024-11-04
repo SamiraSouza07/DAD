@@ -9,4 +9,5 @@
   margin: auto;
   margin-top: 10px;
   padding-bottom: 25px;
+  transition: all 0.2s ease-in-out;
 }

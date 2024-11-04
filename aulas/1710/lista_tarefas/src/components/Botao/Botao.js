@@ -7,7 +7,9 @@ function Botao(props) {
         className={styles.botao}
         onClick={() => {
           if (props.titulo == "Adicionar") {
-            props.addTask(props.tarefa);
+            if (props.tarefa != "") {
+              props.addTask(props.tarefa);
+            }
           } else if (props.titulo == "Todas") {
             props.filterTasks(1);
           } else if (props.titulo == "Completas") {

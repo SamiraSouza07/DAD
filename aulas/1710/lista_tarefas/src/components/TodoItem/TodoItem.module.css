@@ -13,11 +13,18 @@
 .p{
     user-select: none;
     cursor: pointer;
+    width: 120px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 .completa{
     user-select: none;
     cursor: pointer;
     text-decoration: line-through;
+    color: green;
+    width: 120px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 .buttons{
     display: flex;
@@ -29,14 +36,29 @@
     padding: 5px 10px;
     border-radius: 5px;
     color: aliceblue;
+    transition: box-shadow 0.01s ease;
 }
 .editar{
     background-color: rgb(255, 174, 0);
-    border: solid rgb(241, 241, 146);
-
+    border: solid rgb(201, 169, 72);;
 }
 .remover{
     background-color: rgb(228, 16, 16);
     border: solid rgb(244, 114, 114);
-
+}
+.remover:active{
+    background-color: rgb(196, 21, 21);
+    border: solid rgb(190, 87, 87);
+}
+.editar:active{
+    background-color: rgb(199, 140, 13);
+    border: solid rgb(176, 147, 61);
+}
+.remover:hover{
+    background-color: rgba(193, 16, 16, 0.868);
+    box-shadow: 0px 0px 2px 2px rgba(175, 19, 19, 0.2);
+}
+.editar:hover{
+    background-color: rgba(237, 164, 5, 0.906);
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
 }

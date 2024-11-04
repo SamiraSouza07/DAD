@@ -30,20 +30,14 @@ function TodoApp(props) {
   };
 
   const filterTasks = (param) => {
-    if (param == 2) {
-      setTasks(tasks.filter((task) => task.completed == true));
-    } else if ((param = 3)) {
-      setTasks(tasks.filter((task) => task.completed == false));
-    } else {
-      setTasks(tasks);
-    }
+   
   };
   return (
     <>
       <div className={styles.container}>
         <h1 className={styles.titulo}>{props.titulo}</h1>
         <TodoForm addTask={addTask} tasks={tasks} />
-        <TodoFilter filterTasks={filterTasks} />
+        <TodoFilter  />
         <TodoList tasks={tasks} editTask={editTask} removeTask={removeTask} />
       </div>
     </>
