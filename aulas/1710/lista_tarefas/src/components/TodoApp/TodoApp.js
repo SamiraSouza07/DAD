@@ -6,6 +6,13 @@ import TodoForm from "../TodoForm/TodoForm";
 
 function TodoApp(props) {
   const [tasks, setTasks] = useState([]);
+  const [filter, setFilter] = useState("all");
+
+  const filteredTasks = tasks.filter((task) => {
+    if (filter === "completed") return task.completed;
+    if (filter === "incomplete") return !task.completed;
+    return true;
+  });
   const addTask = (text) => {
     const newTask = {
       id: Date.now(),
@@ -29,16 +36,13 @@ function TodoApp(props) {
     );
   };
 
-  const filterTasks = (param) => {
-   
-  };
   return (
     <>
       <div className={styles.container}>
         <h1 className={styles.titulo}>{props.titulo}</h1>
         <TodoForm addTask={addTask} tasks={tasks} />
-        <TodoFilter  />
-        <TodoList tasks={tasks} editTask={editTask} removeTask={removeTask} />
+        <TodoFilter setFilter={setFilter} filter={filter} />
+        <TodoList tasks={filteredTasks} editTask={editTask} removeTask={removeTask} />
       </div>
     </>
   );

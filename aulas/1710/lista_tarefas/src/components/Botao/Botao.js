@@ -1,21 +1,25 @@
 import styles from "./Botao.module.css";
 
 function Botao(props) {
+  function handleSubmit() {
+    if (props.tarefa.trim()) {
+      props.addTask(props.tarefa);
+      props.setTarefa("")
+    }
+  }
   return (
     <>
       <button
         className={styles.botao}
         onClick={() => {
           if (props.titulo == "Adicionar") {
-            if (props.tarefa != "") {
-              props.addTask(props.tarefa);
-            }
+            handleSubmit();
           } else if (props.titulo == "Todas") {
-            props.filterTasks(1);
+            props.setFilter("all");
           } else if (props.titulo == "Completas") {
-            props.filterTasks(2);
+            props.setFilter("completed");
           } else if (props.titulo == "Incompletas") {
-            props.filterTasks(3);
+            props.setFilter("incomplete");
           }
         }}
       >

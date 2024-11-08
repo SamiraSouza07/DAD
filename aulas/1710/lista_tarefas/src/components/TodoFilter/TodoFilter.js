@@ -5,9 +5,9 @@ function TodoFilter(props) {
   return (
     <>
       <div className={styles.filtro}>
-        <Botao titulo="Todas" filterTasks={props.filterTasks} />
-        <Botao titulo="Completas" filterTasks={props.filterTasks} />
-        <Botao titulo="Incompletas" filterTasks={props.filterTasks} />
+        <Botao titulo="Todas" setFilter={props.setFilter} filter={props.filter}/>
+        <Botao titulo="Completas" setFilter={props.setFilter} filter={props.filter}/>
+        <Botao titulo="Incompletas" setFilter={props.setFilter} filter={props.filter}/>
       </div>
     </>
   );

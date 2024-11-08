@@ -9,6 +9,7 @@ function TodoForm(props) {
       <div className={styles.container}>
         <input
           className={styles.tarefa}
+          value={tarefa}
           type="text"
           placeholder="Nova tarefa"
           onChange={(e) => {
@@ -17,7 +18,12 @@ function TodoForm(props) {
             }
           }}
         />
-        <Botao titulo="Adicionar" addTask={props.addTask} tarefa={tarefa} />
+        <Botao
+          titulo="Adicionar"
+          addTask={props.addTask}
+          tarefa={tarefa}
+          setTarefa={setTarefa}
+        />
       </div>
     </>
   );

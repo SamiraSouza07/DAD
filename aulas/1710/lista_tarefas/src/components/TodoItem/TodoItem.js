@@ -1,9 +1,12 @@
+import { useState } from "react";
 import styles from "./TodoItem.module.css";
 
 function TodoItem(props) {
+  const [isEditing, setIsEditing] = useState(false);
+  const [newTask, setNewTask] = useState(props.tarefa.text);
   let id = props.tarefa.id;
   function tarefa() {
-    if (!props.tarefa.completed) {
+    if (props.tarefa.completed == false) {
       return (
         <p
           className={styles.p}
@@ -52,8 +55,7 @@ function TodoItem(props) {
                   completed: false,
                 };
                 props.editTask(props.tarefa.id, newTask);
-              } 
-                
+              }
             }}
           >
             Editar
