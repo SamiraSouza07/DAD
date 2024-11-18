@@ -4,7 +4,7 @@ function Botao(props) {
   function handleSubmit() {
     if (props.tarefa.trim()) {
       props.addTask(props.tarefa);
-      props.setTarefa("")
+      props.setTarefa("");
     }
   }
   return (

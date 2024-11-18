@@ -40,9 +40,13 @@ function TodoApp(props) {
     <>
       <div className={styles.container}>
         <h1 className={styles.titulo}>{props.titulo}</h1>
-        <TodoForm addTask={addTask} tasks={tasks} />
+        <TodoForm addTask={addTask} />
         <TodoFilter setFilter={setFilter} filter={filter} />
-        <TodoList tasks={filteredTasks} editTask={editTask} removeTask={removeTask} />
+        <TodoList
+          tasks={filteredTasks}
+          editTask={editTask}
+          removeTask={removeTask}
+        />
       </div>
     </>
   );
